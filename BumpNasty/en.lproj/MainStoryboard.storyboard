@@ -46,12 +46,12 @@
                         <color key="backgroundColor" red="0.92156862745098034" green="0.11764705882352941" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Aoc-49-JdZ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="207" id="0iZ-NE-cqi"/>
-                            <constraint firstItem="8Rd-Xu-QQy" firstAttribute="centerX" secondItem="Aoc-49-JdZ" secondAttribute="centerX" type="default" id="6zn-tx-XtO"/>
                             <constraint firstAttribute="centerX" secondItem="8Rd-Xu-QQy" secondAttribute="centerX" type="user" id="8eY-na-dh4"/>
+                            <constraint firstItem="Ybm-CD-bqY" firstAttribute="centerX" secondItem="Aoc-49-JdZ" secondAttribute="centerX" type="default" id="9pD-4k-wuY"/>
                             <constraint firstAttribute="centerX" secondItem="Ybm-CD-bqY" secondAttribute="centerX" type="user" id="AvY-pf-1HB"/>
                             <constraint firstItem="8Ae-Le-LyC" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="H7I-gV-vPF"/>
                             <constraint firstItem="8Ae-Le-LyC" firstAttribute="top" secondItem="3" secondAttribute="top" priority="1" type="user" id="IKI-ys-IYS"/>
-                            <constraint firstAttribute="bottom" secondItem="Ybm-CD-bqY" secondAttribute="bottom" constant="105" id="NWq-E5-Pih"/>
+                            <constraint firstAttribute="bottom" secondItem="Ybm-CD-bqY" secondAttribute="bottom" constant="75" id="PcT-yn-z4g"/>
                             <constraint firstItem="8Rd-Xu-QQy" firstAttribute="top" secondItem="3" secondAttribute="top" constant="155" type="user" id="SPl-lj-qhH"/>
                             <constraint firstItem="8Ae-Le-LyC" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="rhl-Vm-LJd"/>
                             <constraint firstItem="8Rd-Xu-QQy" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="85" id="wdr-8D-kiB"/>
