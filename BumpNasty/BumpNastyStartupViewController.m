@@ -10,23 +10,28 @@
 #import "BumpNastyStartupViewController.h"
 
 @interface BumpNastyStartupViewController ()
-@property (nonatomic,retain) IBOutlet UIActivityIndicatorView *fbIndicator;
 - (IBAction)facebookLogin:(id)sender;
 @property (nonatomic,retain) IBOutlet UIButton *facebookButton;
 @property (strong, nonatomic) IBOutlet FBProfilePictureView *profilePicture;
+@property (strong, nonatomic) IBOutlet UIImageView *loadingBackground;
+@property (strong, nonatomic) IBOutlet UIImageView *loadingImage;
+@property (strong, nonatomic) IBOutlet UIImageView *startupBackground;
+@property (strong, nonatomic) IBOutlet UIImageView *pictureBackground;
 
 @end
 
 @implementation BumpNastyStartupViewController
 
-@synthesize fbIndicator,
-            facebookButton;
+@synthesize facebookButton, profilePicture, loadingBackground, loadingImage, startupBackground, pictureBackground;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
     [self.profilePicture setHidden:YES];
+    [self.loadingBackground setHidden:YES];
+    [self.pictureBackground setHidden:YES];
+    [self.loadingImage setHidden:YES];
     
     BumpNastyAppDelegate* appDelegate = (BumpNastyAppDelegate *)[UIApplication sharedApplication].delegate;
 
@@ -45,7 +50,9 @@
 {
     NSLog(@"LOADING");
     
-    [fbIndicator startAnimating];
+    [startupBackground setHidden:YES];
+    [loadingBackground setHidden:NO];
+    [loadingImage setHidden:NO];
     [facebookButton setHidden:YES];
 }
 
@@ -53,16 +60,21 @@
 {
     NSLog(@"showFacebookLoginButton");
     
-    [fbIndicator stopAnimating];
+    [loadingImage setHidden:YES];
     [facebookButton setHidden:NO];
+    [startupBackground setHidden:NO];
+    [loadingBackground setHidden:YES];
 
 }
 
 - (IBAction)facebookLogin:(id)sender {
     NSLog(@"facebookLogin");
+
+    [startupBackground setHidden:YES];
+    [loadingBackground setHidden:NO];
     
     [facebookButton setHidden:YES];
-    [fbIndicator startAnimating];
+    [loadingImage setHidden:NO];
     
     BumpNastyAppDelegate* appDelegate = (BumpNastyAppDelegate *)[UIApplication sharedApplication].delegate;
     
@@ -70,12 +82,18 @@
 }
 
 - (void)showPicture {
-    [fbIndicator stopAnimating];
+    
+    [pictureBackground setHidden:NO];
+    [startupBackground setHidden:YES];
+    [loadingBackground setHidden:YES];
+    
+    [loadingImage setHidden:YES];
     [self.profilePicture setHidden:NO];
     
     BumpNastyAppDelegate* appDelegate = (BumpNastyAppDelegate *)[UIApplication sharedApplication].delegate;
     
     self.profilePicture.profileID = appDelegate.fbUser.userID;
+    self.profilePicture.pictureCropping = FBProfilePictureCroppingSquare;
     
     double delayInSeconds = 5.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);

@@ -14,7 +14,12 @@
                         <subviews>
                             <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="startup_screen_no_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Ae-Le-LyC">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="480" id="0l1-Sr-Pl8"/>
+                                    <constraint firstAttribute="height" constant="480" type="user" id="1r4-ap-M5Q"/>
+                                </constraints>
+                            </imageView>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Startup_Facebook_Loading.png" translatesAutoresizingMaskIntoConstraints="NO" id="SOn-mv-q5p">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="480" type="user" id="dEH-pM-0x3"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybm-CD-bqY">
@@ -31,38 +36,57 @@
                                     <action selector="facebookLogin:" destination="2" eventType="touchUpInside" id="XwG-IN-rqo"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="8Rd-Xu-QQy" customClass="FBProfilePictureView">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" type="user" id="cme-m5-xc4"/>
-                                </constraints>
-                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="loading.gif" translatesAutoresizingMaskIntoConstraints="NO" id="wLU-Qv-EuT">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="HL4-ag-c6E"/>
                                     <constraint firstAttribute="height" constant="166" id="dm7-wP-IMA"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="8Rd-Xu-QQy" customClass="FBProfilePictureView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" type="user" id="bpw-O6-VJZ"/>
+                                    <constraint firstAttribute="width" constant="104" type="user" id="kx0-pn-L8V"/>
+                                </constraints>
+                            </view>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="Startup_Facebook_No_Picture.png" translatesAutoresizingMaskIntoConstraints="NO" id="vjM-fh-Gnb">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="480" type="user" id="KW7-yw-1Sr"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="480" type="user" id="Vxn-Ll-NXk"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862745098034" green="0.11764705882352941" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="8Rd-Xu-QQy" secondAttribute="centerX" type="user" id="8eY-na-dh4"/>
+                            <constraint firstItem="Ybm-CD-bqY" firstAttribute="centerX" secondItem="wLU-Qv-EuT" secondAttribute="centerX" type="default" id="8ye-sc-VfN"/>
+                            <constraint firstItem="8Rd-Xu-QQy" firstAttribute="top" secondItem="3" secondAttribute="top" constant="256" type="user" id="Aoa-FO-LSt"/>
                             <constraint firstAttribute="centerX" secondItem="Ybm-CD-bqY" secondAttribute="centerX" type="user" id="AvY-pf-1HB"/>
+                            <constraint firstItem="8Ae-Le-LyC" firstAttribute="top" secondItem="3" secondAttribute="top" type="user" id="Dmz-cT-WH1"/>
                             <constraint firstItem="8Ae-Le-LyC" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="H7I-gV-vPF"/>
                             <constraint firstItem="8Ae-Le-LyC" firstAttribute="top" secondItem="3" secondAttribute="top" priority="1" type="user" id="IKI-ys-IYS"/>
-                            <constraint firstAttribute="bottom" secondItem="Ybm-CD-bqY" secondAttribute="bottom" constant="75" id="PcT-yn-z4g"/>
-                            <constraint firstItem="8Rd-Xu-QQy" firstAttribute="top" secondItem="3" secondAttribute="top" constant="155" type="user" id="SPl-lj-qhH"/>
+                            <constraint firstItem="SOn-mv-q5p" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Kh5-3D-kWM"/>
+                            <constraint firstItem="SOn-mv-q5p" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="Ney-vh-jAQ"/>
+                            <constraint firstItem="vjM-fh-Gnb" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="O7R-Eh-I1f"/>
+                            <constraint firstItem="8Rd-Xu-QQy" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="72" type="user" id="beJ-RT-svV"/>
+                            <constraint firstAttribute="trailing" secondItem="8Rd-Xu-QQy" secondAttribute="trailing" constant="144" type="user" id="ftJ-2H-jGP"/>
                             <constraint firstItem="wLU-Qv-EuT" firstAttribute="top" secondItem="3" secondAttribute="top" constant="216" id="hnX-Li-5F8"/>
-                            <constraint firstItem="wLU-Qv-EuT" firstAttribute="centerX" secondItem="8Rd-Xu-QQy" secondAttribute="centerX" type="default" id="pX6-HP-Tqo"/>
+                            <constraint firstItem="vjM-fh-Gnb" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="lMd-vN-Dj4"/>
+                            <constraint firstItem="8Ae-Le-LyC" firstAttribute="bottom" secondItem="SOn-mv-q5p" secondAttribute="bottom" type="user" id="mXx-kq-cuB"/>
                             <constraint firstItem="8Ae-Le-LyC" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="rhl-Vm-LJd"/>
-                            <constraint firstItem="8Rd-Xu-QQy" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="85" id="wdr-8D-kiB"/>
-                            <constraint firstItem="8Ae-Le-LyC" firstAttribute="top" secondItem="3" secondAttribute="top" constant="34" id="wpc-3v-3ba"/>
+                            <constraint firstItem="8Rd-Xu-QQy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3" secondAttribute="top" constant="256" type="user" id="tx5-HJ-4aa"/>
+                            <constraint firstAttribute="bottom" secondItem="Ybm-CD-bqY" secondAttribute="bottom" constant="75" id="v0v-S5-iMm"/>
+                            <constraint firstItem="SOn-mv-q5p" firstAttribute="top" secondItem="3" secondAttribute="top" type="user" id="vdW-KF-Lcu"/>
+                            <constraint firstItem="vjM-fh-Gnb" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="xIq-Wp-sb7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fgl-J0-Hv0"/>
                     <connections>
                         <outlet property="facebookButton" destination="Ybm-CD-bqY" id="af2-4Q-PBG"/>
+                        <outlet property="loadingBackground" destination="SOn-mv-q5p" id="cmf-qE-Lfs"/>
+                        <outlet property="loadingImage" destination="wLU-Qv-EuT" id="PtV-IR-lUP"/>
+                        <outlet property="pictureBackground" destination="vjM-fh-Gnb" id="AAk-Ux-cIw"/>
                         <outlet property="profilePicture" destination="8Rd-Xu-QQy" id="dSa-Qr-DNY"/>
+                        <outlet property="startupBackground" destination="8Ae-Le-LyC" id="LGr-61-UpU"/>
                         <segue destination="kyM-yb-ytZ" kind="push" identifier="showBumpView" id="WpN-kK-XOB"/>
                     </connections>
                 </viewController>
@@ -507,6 +531,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Startup_Facebook_Loading.png" width="640" height="960"/>
+        <image name="Startup_Facebook_No_Picture.png" width="640" height="960"/>
         <image name="background.png" width="640" height="960"/>
         <image name="btn_back.png" width="99" height="58"/>
         <image name="btn_bookroom.png" width="541" height="83"/>
@@ -562,8 +588,11 @@
             <relationships>
                 <relationship kind="action" name="facebookLogin:"/>
                 <relationship kind="outlet" name="facebookButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fbIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="loadingBackground" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="loadingImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="pictureBackground" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="profilePicture" candidateClass="FBProfilePictureView"/>
+                <relationship kind="outlet" name="startupBackground" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="FBProfilePictureView" superclassName="UIView">
