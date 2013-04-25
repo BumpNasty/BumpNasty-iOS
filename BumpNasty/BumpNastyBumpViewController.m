@@ -192,7 +192,10 @@ static const NSTimeInterval accelerometerMin = 0.01;
     if (json) {
 //        self.label.text = [json objectForKey:@"error"];
         
-        NSLog(@"%@", json);
+        appDelegate.hotel = [[HotelObject alloc] initWithData:json];
+        
+        [self gotoHotelView];
+        //NSLog(@"%@", json);
     }
     
     // release the connection, and the data object
@@ -203,8 +206,14 @@ static const NSTimeInterval accelerometerMin = 0.01;
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]
                                              cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
                                          timeoutInterval:60.0];
+
+//    NSURLRequest *request2 = [NSURLRequest requestWithURL:[NSURL URLWithString:url2]
+//                                             cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
+//                                         timeoutInterval:60.0];
     
     NSURLConnection *connect = [[NSURLConnection alloc] initWithRequest:request delegate: self];
+    
+//    NSURLConnection *connect2 = [[NSURLConnection alloc] initWithRequest:request2 delegate: nil];
     
     BumpNastyAppDelegate* appDelegate = (BumpNastyAppDelegate *)[UIApplication sharedApplication].delegate;
     
@@ -280,4 +289,10 @@ static const NSTimeInterval accelerometerMin = 0.01;
     
     //    NSLog(@"STAR %f - %f", self.starSlider.lowerValue, self.starSlider.upperValue);
 }
+
+- (void)gotoHotelView {
+    
+    [self performSegueWithIdentifier:@"showHotelView" sender: self];
+}
+
 @end

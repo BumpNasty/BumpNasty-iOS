@@ -160,11 +160,92 @@
                         <outlet property="minStarsLabel" destination="1xU-zK-Wqg" id="fJB-WW-qdB"/>
                         <outlet property="priceSlider" destination="fA9-YW-tYy" id="lXX-d6-Jkt"/>
                         <outlet property="starSlider" destination="98S-Cl-GU3" id="Okn-xB-SUM"/>
+                        <segue destination="gu2-Mi-VA2" kind="push" identifier="showHotelView" id="zma-fG-dOT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meX-z6-53c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1067" y="159"/>
+            <point key="canvasLocation" x="799" y="159"/>
+        </scene>
+        <!--Bump Nasty Hotel View Controller-->
+        <scene sceneID="O1A-D5-PB4">
+            <objects>
+                <viewController storyboardIdentifier="hotelViewController" id="gu2-Mi-VA2" customClass="BumpNastyHotelViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Ku-vP-cbT">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaw-tR-W8J">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="7Jy-wG-xtt"/>
+                                    <constraint firstAttribute="height" constant="100" id="etu-X9-YmN"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ET-pP-eXL" customClass="FBProfilePictureView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OI3-Yw-BCA">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="irL-ve-cS3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Distance" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lX-Me-eDm">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="yqO-Kl-5gr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26f-jE-Rwz">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="RVh-cn-BJD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWw-JP-WnP">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5ET-pP-eXL" firstAttribute="top" secondItem="yaw-tR-W8J" secondAttribute="top" type="default" id="0gP-K2-X00"/>
+                            <constraint firstItem="SWw-JP-WnP" firstAttribute="leading" secondItem="8lX-Me-eDm" secondAttribute="leading" type="default" id="4Zp-Rg-ckb"/>
+                            <constraint firstItem="26f-jE-Rwz" firstAttribute="trailing" secondItem="OI3-Yw-BCA" secondAttribute="trailing" type="default" id="7uX-b6-2oZ"/>
+                            <constraint firstAttribute="bottom" secondItem="26f-jE-Rwz" secondAttribute="bottom" constant="234" id="EaO-4s-6Qs"/>
+                            <constraint firstItem="SWw-JP-WnP" firstAttribute="baseline" secondItem="26f-jE-Rwz" secondAttribute="baseline" type="default" id="FUO-YB-hDI"/>
+                            <constraint firstItem="26f-jE-Rwz" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Pge-ou-eVw"/>
+                            <constraint firstAttribute="trailing" secondItem="8lX-Me-eDm" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Sxr-Yu-nJv"/>
+                            <constraint firstAttribute="trailing" secondItem="5ET-pP-eXL" secondAttribute="trailing" constant="200" id="VsV-2x-jOL"/>
+                            <constraint firstItem="OI3-Yw-BCA" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="263" id="WdN-52-c0G"/>
+                            <constraint firstItem="SWw-JP-WnP" firstAttribute="top" secondItem="26f-jE-Rwz" secondAttribute="top" type="default" id="acA-dB-i5U"/>
+                            <constraint firstItem="OI3-Yw-BCA" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fWn-Su-2ue"/>
+                            <constraint firstAttribute="trailing" secondItem="yaw-tR-W8J" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gwP-hB-ToL"/>
+                            <constraint firstItem="8lX-Me-eDm" firstAttribute="baseline" secondItem="OI3-Yw-BCA" secondAttribute="baseline" type="default" id="kJ2-P2-jWF"/>
+                            <constraint firstAttribute="trailing" secondItem="SWw-JP-WnP" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="p0O-jP-eVp"/>
+                            <constraint firstItem="5ET-pP-eXL" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="rv6-7T-yWq"/>
+                            <constraint firstItem="5ET-pP-eXL" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="91" id="tZj-OS-eih"/>
+                            <constraint firstItem="5ET-pP-eXL" firstAttribute="bottom" secondItem="yaw-tR-W8J" secondAttribute="bottom" type="default" id="tx0-vK-MEO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GUr-2S-h3d"/>
+                    <connections>
+                        <outlet property="distanceLabel" destination="SWw-JP-WnP" id="Edp-tc-obs"/>
+                        <outlet property="hotelImage" destination="yaw-tR-W8J" id="l2Z-v6-7I2"/>
+                        <outlet property="priceLabel" destination="26f-jE-Rwz" id="4gf-kV-NE9"/>
+                        <outlet property="profilePicture" destination="5ET-pP-eXL" id="VCQ-il-38J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F28-cv-acZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1287" y="159"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ibv-CV-8x4">
@@ -204,6 +285,15 @@
                 <relationship kind="outlet" name="priceSlider" candidateClass="NMRangeSlider"/>
                 <relationship kind="outlet" name="profilePicture" candidateClass="FBProfilePictureView"/>
                 <relationship kind="outlet" name="starSlider" candidateClass="NMRangeSlider"/>
+            </relationships>
+        </class>
+        <class className="BumpNastyHotelViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BumpNastyHotelViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="distanceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hotelImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="profilePicture" candidateClass="FBProfilePictureView"/>
             </relationships>
         </class>
         <class className="BumpNastyStartupViewController" superclassName="UIViewController">

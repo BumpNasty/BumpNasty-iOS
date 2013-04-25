@@ -10,11 +10,13 @@
 #import <FacebookSDK/FacebookSDK.h>
 #import <CoreMotion/CoreMotion.h>
 
+#import "HotelObject.h"
 #import "FacebookUserObject.h"
 
 @interface BumpNastyAppDelegate : UIResponder <UIApplicationDelegate, UINavigationControllerDelegate> {
     CMMotionManager *motionmanager;
     NSMutableData *received;
+    HotelObject *hotel;
 }
 
 @property (strong, nonatomic, readonly) CMMotionManager *sharedManager;
@@ -32,5 +34,7 @@
 @property (strong, nonatomic) NSMutableData *received;
 
 @property bool loggedIn;
+
+@property (strong, nonatomic) HotelObject *hotel;
 
 @end

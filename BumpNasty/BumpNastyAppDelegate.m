@@ -14,7 +14,7 @@
 
 @implementation BumpNastyAppDelegate
 
-@synthesize navigationController, storyBoard, fbUser, received, loggedIn;
+@synthesize navigationController, storyBoard, fbUser, received, loggedIn, hotel;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
