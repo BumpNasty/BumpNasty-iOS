@@ -264,12 +264,6 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon_rating.png" translatesAutoresizingMaskIntoConstraints="NO" id="vgL-s0-XGu">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="36" id="Oqv-50-7xg"/>
-                                    <constraint firstAttribute="height" constant="32" id="h03-Ii-XDx"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ET-pP-eXL" customClass="FBProfilePictureView">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
@@ -368,6 +362,12 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="7Jy-wG-xtt"/>
                                     <constraint firstAttribute="height" constant="100" id="etu-X9-YmN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon_rating.png" translatesAutoresizingMaskIntoConstraints="NO" id="vgL-s0-XGu">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="Oqv-50-7xg"/>
+                                    <constraint firstAttribute="height" constant="32" id="h03-Ii-XDx"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDq-dq-JS8">
@@ -488,21 +488,37 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="navbar.png" translatesAutoresizingMaskIntoConstraints="NO" id="99A-pb-Qt7">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="333" id="vCM-oi-xaz"/>
+                                    <constraint firstAttribute="height" constant="46" id="zkl-1y-KXO"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo_navbar.png" translatesAutoresizingMaskIntoConstraints="NO" id="oTN-fm-qXY">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MPc-Ba-gc9"/>
+                                    <constraint firstAttribute="width" constant="98" id="uOm-1H-Wcq"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="48l-5V-kE7" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="3fz-yg-0c1"/>
+                            <constraint firstAttribute="bottom" secondItem="q9l-mB-9UT" secondAttribute="bottom" constant="112" id="4IF-7E-gwx"/>
                             <constraint firstItem="q9l-mB-9UT" firstAttribute="leading" secondItem="bG2-vp-DAX" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="4d9-3n-nl5"/>
+                            <constraint firstItem="pTU-Kl-sS6" firstAttribute="top" secondItem="oTN-fm-qXY" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="5VG-4O-m9l"/>
                             <constraint firstAttribute="trailing" secondItem="aCR-60-n3K" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="8Hw-C2-ozT"/>
                             <constraint firstItem="aCR-60-n3K" firstAttribute="leading" secondItem="bG2-vp-DAX" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="DQ2-sZ-vXz"/>
+                            <constraint firstItem="oTN-fm-qXY" firstAttribute="centerY" secondItem="99A-pb-Qt7" secondAttribute="centerY" type="default" id="Kvz-VU-qTg"/>
                             <constraint firstItem="48l-5V-kE7" firstAttribute="baseline" secondItem="Wqj-bk-VpI" secondAttribute="baseline" type="default" id="Kwo-bR-zo3"/>
                             <constraint firstItem="DPy-gP-T37" firstAttribute="top" secondItem="48l-5V-kE7" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="W1T-fR-KOg"/>
+                            <constraint firstItem="99A-pb-Qt7" firstAttribute="centerX" secondItem="pTU-Kl-sS6" secondAttribute="centerX" type="default" id="ZBN-sE-ZeT"/>
                             <constraint firstItem="pTU-Kl-sS6" firstAttribute="leading" secondItem="bG2-vp-DAX" secondAttribute="leading" type="default" id="bw8-lK-GNT"/>
-                            <constraint firstAttribute="bottom" secondItem="q9l-mB-9UT" secondAttribute="bottom" constant="158" id="dfR-CV-dhr"/>
-                            <constraint firstItem="pTU-Kl-sS6" firstAttribute="top" secondItem="bG2-vp-DAX" secondAttribute="top" type="default" id="j26-dn-5jF"/>
+                            <constraint firstAttribute="bottom" secondItem="aCR-60-n3K" secondAttribute="bottom" constant="138" id="cCd-va-KoC"/>
+                            <constraint firstItem="oTN-fm-qXY" firstAttribute="leading" secondItem="bG2-vp-DAX" secondAttribute="leading" constant="112" id="kdN-Ql-0dM"/>
                             <constraint firstItem="Wqj-bk-VpI" firstAttribute="leading" secondItem="bG2-vp-DAX" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="lpU-Ik-MGA"/>
                             <constraint firstItem="DPy-gP-T37" firstAttribute="leading" secondItem="48l-5V-kE7" secondAttribute="leading" type="default" id="opf-F3-76d"/>
-                            <constraint firstItem="aCR-60-n3K" firstAttribute="top" secondItem="bG2-vp-DAX" secondAttribute="top" constant="255" id="ptW-qs-CT3"/>
+                            <constraint firstItem="99A-pb-Qt7" firstAttribute="top" secondItem="bG2-vp-DAX" secondAttribute="top" type="default" id="sEy-cG-JV0"/>
                             <constraint firstItem="pTU-Kl-sS6" firstAttribute="trailing" secondItem="bG2-vp-DAX" secondAttribute="trailing" type="default" id="sSs-kk-GTb"/>
                             <constraint firstAttribute="trailing" secondItem="DPy-gP-T37" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="tWv-0g-1Yz"/>
                             <constraint firstItem="q9l-mB-9UT" firstAttribute="top" secondItem="Wqj-bk-VpI" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ykZ-Q2-hj4"/>
