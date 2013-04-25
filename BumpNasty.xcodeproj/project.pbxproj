@@ -17,7 +17,6 @@
 		226B7577172847B200378CED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 226B7576172847B200378CED /* main.m */; };
 		226B757B172847B200378CED /* BumpNastyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 226B757A172847B200378CED /* BumpNastyAppDelegate.m */; };
 		226B757D172847B200378CED /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 226B757C172847B200378CED /* Default.png */; };
-		226B757F172847B200378CED /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 226B757E172847B200378CED /* Default@2x.png */; };
 		226B7581172847B200378CED /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 226B7580172847B200378CED /* Default-568h@2x.png */; };
 		226B7584172847B200378CED /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226B7582172847B200378CED /* MainStoryboard.storyboard */; };
 		226B7587172847B200378CED /* BumpNastyStartupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226B7586172847B200378CED /* BumpNastyStartupViewController.m */; };
@@ -91,6 +90,9 @@
 		D0A644A317292CF4008EB5F9 /* profile_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A6448817292CF4008EB5F9 /* profile_icon.png */; };
 		D0A644A417292CF4008EB5F9 /* profile_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A6448917292CF4008EB5F9 /* profile_placeholder.png */; };
 		D0A644A517292CF4008EB5F9 /* startup_screen_no_button.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A6448A17292CF4008EB5F9 /* startup_screen_no_button.png */; };
+		D0CEC1291729692200942DB0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D0CEC1281729692200942DB0 /* Default.png */; };
+		D0CEC12B1729692800942DB0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0CEC12A1729692800942DB0 /* Default@2x.png */; };
+		D0CEC12D1729693000942DB0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0CEC12C1729693000942DB0 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -189,6 +191,9 @@
 		D0A6448817292CF4008EB5F9 /* profile_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_icon.png; sourceTree = "<group>"; };
 		D0A6448917292CF4008EB5F9 /* profile_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_placeholder.png; sourceTree = "<group>"; };
 		D0A6448A17292CF4008EB5F9 /* startup_screen_no_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startup_screen_no_button.png; sourceTree = "<group>"; };
+		D0CEC1281729692200942DB0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D0CEC12A1729692800942DB0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D0CEC12C1729693000942DB0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +222,9 @@
 		226B755E172847B200378CED = {
 			isa = PBXGroup;
 			children = (
+				D0CEC12C1729693000942DB0 /* Default-568h@2x.png */,
+				D0CEC12A1729692800942DB0 /* Default@2x.png */,
+				D0CEC1281729692200942DB0 /* Default.png */,
 				221FA80A1729668600F912A4 /* Icon@2x.png */,
 				221FA8081729668000F912A4 /* Icon.png */,
 				226B7570172847B200378CED /* BumpNasty */,
@@ -442,7 +450,6 @@
 			files = (
 				226B7575172847B200378CED /* InfoPlist.strings in Resources */,
 				226B757D172847B200378CED /* Default.png in Resources */,
-				226B757F172847B200378CED /* Default@2x.png in Resources */,
 				226B7581172847B200378CED /* Default-568h@2x.png in Resources */,
 				226B7584172847B200378CED /* MainStoryboard.storyboard in Resources */,
 				226B75DD172870F500378CED /* slider-default-handle-highlighted.png in Resources */,
@@ -503,6 +510,9 @@
 				22D52CF51729682B00750181 /* Icon@2x.png in Resources */,
 				22D52CF61729682B00750181 /* iTunesArtwork.png in Resources */,
 				22D52CF71729682B00750181 /* iTunesArtwork@2x.png in Resources */,
+				D0CEC1291729692200942DB0 /* Default.png in Resources */,
+				D0CEC12B1729692800942DB0 /* Default@2x.png in Resources */,
+				D0CEC12D1729693000942DB0 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
