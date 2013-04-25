@@ -299,53 +299,6 @@
         <image name="btn_facebook.png" width="541" height="83"/>
         <image name="startup_screen_no_button.png" width="640" height="960"/>
     </resources>
-    <classes>
-        <class className="BumpNastyBumpViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BumpNastyBumpViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="distanceSliderChanged:"/>
-                <relationship kind="action" name="priceSliderChanged:"/>
-                <relationship kind="action" name="starSliderChanged:"/>
-                <relationship kind="outlet" name="distanceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="distanceSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="maxPriceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="maxStarsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="minPriceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="minStarsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="priceSlider" candidateClass="NMRangeSlider"/>
-                <relationship kind="outlet" name="profilePicture" candidateClass="FBProfilePictureView"/>
-                <relationship kind="outlet" name="starSlider" candidateClass="NMRangeSlider"/>
-            </relationships>
-        </class>
-        <class className="BumpNastyHotelViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BumpNastyHotelViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="distanceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="hotelImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="profilePicture" candidateClass="FBProfilePictureView"/>
-                <relationship kind="outlet" name="starLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="BumpNastyStartupViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BumpNastyStartupViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="facebookLogin:"/>
-                <relationship kind="outlet" name="facebookButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fbIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="profilePicture" candidateClass="FBProfilePictureView"/>
-            </relationships>
-        </class>
-        <class className="FBProfilePictureView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FBProfilePictureView.h"/>
-        </class>
-        <class className="NMRangeSlider" superclassName="UIControl">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NMRangeSlider.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

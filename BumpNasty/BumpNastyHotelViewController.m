@@ -51,18 +51,33 @@
     
     profilePicture.profileID = [(NSDictionary *)[hotelData objectForKey:@"other"] objectForKey:@"id"];
     
-    NSNumber *distanceNumber = [singleHotel objectForKey:@"proximityDistance"];
+//    NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+//    [f setNumberStyle:NSNumberFormatterDecimalStyle];
+//    [f setGeneratesDecimalNumbers:NO];
     
-    int distanceInt = distanceNumber.intValue;
+//    NSNumber *proximity = [f numberFromString:[singleHotel valueForKey:@"proximityDistance"]];
+  
+    NSNumber *proximity = [singleHotel valueForKey:@"proximityDistance"];
     
-    NSString *price = [[NSString alloc] initWithFormat: @"%@",[singleHotel objectForKey:@"lowRate"]];
-    NSString *distance = [[NSString alloc] initWithFormat:@"%d", distanceInt];
+    NSLog(@"%@", [singleHotel valueForKey:@"proximityDistance"]);
+    distanceLabel.text = [[NSString alloc] initWithFormat:@"%d", [proximity intValue]];
     
-    NSString *star = [singleHotel objectForKey:@"hotelRating"];
+    starLabel.text = [[NSString alloc] initWithFormat:@"%@", [singleHotel valueForKey:@"hotelRating"]];
+    NSLog(@"%@", [singleHotel valueForKey:@"hotelRating"]);
+
+    priceLabel.text = [[NSString alloc] initWithFormat:@"%@", [singleHotel valueForKey:@"lowRate"]];
+    NSLog(@"%@", [singleHotel valueForKey:@"lowRate"]);
     
-    priceLabel.text = price;
-    distanceLabel.text = distance;
-    starLabel.text = star;
+ //   int distanceInt = [[singleHotel valueForKey:@"proximityDistance"] intValue];
+    
+//    NSString *price = [[NSString alloc] initWithFormat: @"%@",[singleHotel valueForKey:@"lowRate"]];
+//    NSString *distance = [[NSString alloc] initWithFormat:@"%d", distanceInt];
+    
+ //   NSString *star = [singleHotel valueForKey:@"hotelRating"];
+    
+//    priceLabel.text = price;
+//    distanceLabel.text = [singleHotel valueForKey:@"proximityDistance"];
+//    starLabel.text = star;
     
 //    CGSize size = img.size;
     
