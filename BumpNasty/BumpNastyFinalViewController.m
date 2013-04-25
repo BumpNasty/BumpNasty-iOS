@@ -20,7 +20,7 @@
 
 @implementation BumpNastyFinalViewController
 
-@synthesize hotelMap;
+@synthesize hotelMap, distanceLabel, locationLabel;
 
 - (void)viewDidLoad
 {
@@ -30,6 +30,10 @@
     CLLocationCoordinate2D annotationCoord;
     
     BumpNastyAppDelegate* appDelegate = (BumpNastyAppDelegate *)[UIApplication sharedApplication].delegate;
+    
+    NSDictionary *hotelData = appDelegate.hotel.data;
+    
+    NSDictionary *singleHotel = [hotelData objectForKey: @"hotel"];
     
     annotationCoord.latitude = appDelegate.latitude;
     annotationCoord.longitude = appDelegate.longitude;
@@ -45,6 +49,14 @@
     hotelMap.centerCoordinate = annotationCoord;
     [hotelMap setRegion:adjustedRegion animated:NO];
     hotelMap.showsUserLocation = YES;
+    
+    NSString *street = @"";
+    NSString *postalcode = @"";
+    NSString *city = @"";
+    NSString *country = @"";
+    
+    distanceLabel.text = [[NSString alloc] initWithFormat:@"%d km", [proximity intValue]];
+    locationLabel.text =[[NSString alloc] initWithFormat:@"%@ %@\n%@, %@", street, postalcode, city, country];
 }
 
 - (void)didReceiveMemoryWarning

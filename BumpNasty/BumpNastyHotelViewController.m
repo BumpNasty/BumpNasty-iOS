@@ -23,7 +23,7 @@
 
 @implementation BumpNastyHotelViewController
 
-@synthesize hotelImage, profilePicture, priceLabel, distanceLabel, starLabel;
+@synthesize hotelImage, profilePicture, priceLabel, distanceLabel, starLabel, hotelName;
 
 - (void)viewDidLoad
 {
@@ -54,16 +54,10 @@
     
     profilePicture.profileID = [(NSDictionary *)[hotelData objectForKey:@"other"] objectForKey:@"id"];
     
-//    NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
-//    [f setNumberStyle:NSNumberFormatterDecimalStyle];
-//    [f setGeneratesDecimalNumbers:NO];
-    
-//    NSNumber *proximity = [f numberFromString:[singleHotel valueForKey:@"proximityDistance"]];
-  
     NSNumber *proximity = [singleHotel valueForKey:@"proximityDistance"];
     
     NSLog(@"%@", [singleHotel valueForKey:@"proximityDistance"]);
-    distanceLabel.text = [[NSString alloc] initWithFormat:@"%d", [proximity intValue]];
+    distanceLabel.text = [[NSString alloc] initWithFormat:@"%d km", [proximity intValue]];
     
     starLabel.text = [[NSString alloc] initWithFormat:@"%@", [singleHotel valueForKey:@"hotelRating"]];
     NSLog(@"%@", [singleHotel valueForKey:@"hotelRating"]);
@@ -71,18 +65,7 @@
     priceLabel.text = [[NSString alloc] initWithFormat:@"%@", [singleHotel valueForKey:@"lowRate"]];
     NSLog(@"%@", [singleHotel valueForKey:@"lowRate"]);
     
- //   int distanceInt = [[singleHotel valueForKey:@"proximityDistance"] intValue];
-    
-//    NSString *price = [[NSString alloc] initWithFormat: @"%@",[singleHotel valueForKey:@"lowRate"]];
-//    NSString *distance = [[NSString alloc] initWithFormat:@"%d", distanceInt];
-    
- //   NSString *star = [singleHotel valueForKey:@"hotelRating"];
-    
-//    priceLabel.text = price;
-//    distanceLabel.text = [singleHotel valueForKey:@"proximityDistance"];
-//    starLabel.text = star;
-    
-//    CGSize size = img.size;
+    hotelName.text = [[NSString alloc] initWithFormat:@"%@", [singleHotel valueForKey:@"name"]];
     
 }
 
