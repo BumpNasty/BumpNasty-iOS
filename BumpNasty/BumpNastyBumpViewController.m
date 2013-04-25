@@ -19,19 +19,20 @@ static const NSTimeInterval accelerometerMin = 0.01;
 @property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *minStarsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *maxStarsLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *loadingBackground;
 
 @end
 
 @implementation BumpNastyBumpViewController
 
-@synthesize locationManager;
+@synthesize locationManager, loadingBackground;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    
+    [loadingBackground setHidden:YES];
 
 //NSLog(@"%@", appDelegate.fbUser.userID);
   
@@ -102,7 +103,9 @@ static const NSTimeInterval accelerometerMin = 0.01;
     
     if ([mManager isAccelerometerActive]) {
         [mManager stopAccelerometerUpdates];
-    
+        
+        [loadingBackground setHidden:NO];
+        
         [self getHotel];
     }
     
@@ -200,6 +203,9 @@ static const NSTimeInterval accelerometerMin = 0.01;
             // optional - add more buttons:
             [alert addButtonWithTitle:@"Close"];
             [alert show];
+            
+            [loadingBackground setHidden:YES];
+
             
             [self checkBumping];
         } else {

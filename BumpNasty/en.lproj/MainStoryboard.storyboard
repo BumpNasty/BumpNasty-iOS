@@ -200,6 +200,7 @@
                                     <constraint firstAttribute="height" constant="30" id="YeG-Ec-wWL"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Startup_Facebook_Loading2.png" translatesAutoresizingMaskIntoConstraints="NO" id="t8D-mo-0jx"/>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862750000001" green="0.1176470588" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -213,6 +214,7 @@
                             <constraint firstItem="BXK-AU-vQ4" firstAttribute="baseline" secondItem="SOf-zP-I9Z" secondAttribute="baseline" type="default" id="8ua-Dl-4qj"/>
                             <constraint firstAttribute="bottom" secondItem="dnL-tc-Gg3" secondAttribute="bottom" constant="109" id="947-Yn-6Qg"/>
                             <constraint firstItem="BXK-AU-vQ4" firstAttribute="trailing" secondItem="1xU-zK-Wqg" secondAttribute="trailing" type="default" id="Aqq-RT-LPe"/>
+                            <constraint firstItem="t8D-mo-0jx" firstAttribute="top" secondItem="X8S-F8-tyQ" secondAttribute="top" type="default" id="EFn-mB-r1K"/>
                             <constraint firstItem="XbJ-Ip-ZOM" firstAttribute="trailing" secondItem="X8S-F8-tyQ" secondAttribute="trailing" type="default" id="Fq6-4r-H4u"/>
                             <constraint firstAttribute="bottom" secondItem="1xU-zK-Wqg" secondAttribute="bottom" constant="69" id="GVa-IW-uIX"/>
                             <constraint firstAttribute="trailing" secondItem="98S-Cl-GU3" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="IuR-PP-Kpk"/>
@@ -228,10 +230,13 @@
                             <constraint firstItem="dnL-tc-Gg3" firstAttribute="leading" secondItem="fA9-YW-tYy" secondAttribute="leading" type="default" id="Z3i-vg-fGW"/>
                             <constraint firstItem="1xU-zK-Wqg" firstAttribute="leading" secondItem="98S-Cl-GU3" secondAttribute="leading" type="default" id="c69-3z-eR7"/>
                             <constraint firstItem="XbJ-Ip-ZOM" firstAttribute="top" secondItem="X8S-F8-tyQ" secondAttribute="top" type="default" id="cMw-U0-oWe"/>
+                            <constraint firstItem="t8D-mo-0jx" firstAttribute="trailing" secondItem="X8S-F8-tyQ" secondAttribute="trailing" type="default" id="dTQ-Ws-VNJ"/>
+                            <constraint firstItem="t8D-mo-0jx" firstAttribute="leading" secondItem="X8S-F8-tyQ" secondAttribute="leading" type="default" id="daF-Yh-1IG"/>
                             <constraint firstItem="uOY-p7-O5j" firstAttribute="top" secondItem="fA9-YW-tYy" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="gpE-ee-pHp"/>
                             <constraint firstAttribute="bottom" secondItem="98S-Cl-GU3" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="gzT-pl-gyZ"/>
                             <constraint firstItem="BXK-AU-vQ4" firstAttribute="leading" secondItem="fA9-YW-tYy" secondAttribute="leading" type="default" id="hos-vx-aIe"/>
                             <constraint firstAttribute="trailing" secondItem="8RR-Nt-ekg" secondAttribute="trailing" constant="12" id="hry-LS-L0p"/>
+                            <constraint firstItem="t8D-mo-0jx" firstAttribute="bottom" secondItem="X8S-F8-tyQ" secondAttribute="bottom" type="default" id="nHW-LN-aEs"/>
                             <constraint firstItem="XbJ-Ip-ZOM" firstAttribute="leading" secondItem="X8S-F8-tyQ" secondAttribute="leading" type="default" id="nfL-Bs-0PY"/>
                             <constraint firstItem="dnL-tc-Gg3" firstAttribute="leading" secondItem="1xU-zK-Wqg" secondAttribute="leading" type="default" id="qzG-di-pOq"/>
                             <constraint firstItem="BXK-AU-vQ4" firstAttribute="top" secondItem="SOf-zP-I9Z" secondAttribute="top" type="default" id="r0i-MH-50v"/>
@@ -243,18 +248,19 @@
                     <connections>
                         <outlet property="distanceLabel" destination="uOY-p7-O5j" id="vTe-LI-6ak"/>
                         <outlet property="distanceSlider" destination="dnL-tc-Gg3" id="SMc-3g-pZs"/>
+                        <outlet property="loadingBackground" destination="t8D-mo-0jx" id="45d-zY-gwM"/>
                         <outlet property="maxPriceLabel" destination="SOf-zP-I9Z" id="F6f-GE-T8s"/>
                         <outlet property="maxStarsLabel" destination="HKH-xJ-6lm" id="oIf-Dl-RBZ"/>
                         <outlet property="minPriceLabel" destination="BXK-AU-vQ4" id="WJj-zj-Wo3"/>
                         <outlet property="minStarsLabel" destination="1xU-zK-Wqg" id="fJB-WW-qdB"/>
                         <outlet property="priceSlider" destination="fA9-YW-tYy" id="lXX-d6-Jkt"/>
                         <outlet property="starSlider" destination="98S-Cl-GU3" id="Okn-xB-SUM"/>
-                        <segue destination="gu2-Mi-VA2" kind="push" identifier="showHotelView" id="zma-fG-dOT"/>
+                        <segue destination="gu2-Mi-VA2" kind="push" identifier="showHotelView" id="UVd-LG-G2L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meX-z6-53c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="799" y="159"/>
+            <point key="canvasLocation" x="781" y="159"/>
         </scene>
         <!--Bump Nasty Hotel View Controller-->
         <scene sceneID="O1A-D5-PB4">
@@ -560,6 +566,7 @@
     </scenes>
     <resources>
         <image name="Startup_Facebook_Loading.png" width="640" height="960"/>
+        <image name="Startup_Facebook_Loading2.png" width="640" height="960"/>
         <image name="Startup_Facebook_No_Picture.png" width="640" height="960"/>
         <image name="background.png" width="640" height="960"/>
         <image name="btn_back.png" width="99" height="58"/>
@@ -582,6 +589,7 @@
                 <relationship kind="action" name="starSliderChanged:"/>
                 <relationship kind="outlet" name="distanceLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="distanceSlider" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="loadingBackground" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="maxPriceLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="maxStarsLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="minPriceLabel" candidateClass="UILabel"/>
