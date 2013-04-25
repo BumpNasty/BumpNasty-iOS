@@ -15,12 +15,13 @@
 @property (strong, nonatomic) IBOutlet MKMapView *hotelMap;
 @property (strong, nonatomic) IBOutlet UILabel *distanceLabel;
 @property (strong, nonatomic) IBOutlet UILabel *locationLabel;
+@property (strong, nonatomic) IBOutlet UILabel *hotelName;
 
 @end
 
 @implementation BumpNastyFinalViewController
 
-@synthesize hotelMap, distanceLabel, locationLabel;
+@synthesize hotelMap, distanceLabel, locationLabel, hotelName;
 
 - (void)viewDidLoad
 {
@@ -42,21 +43,28 @@
     annotationPoint.coordinate = annotationCoord;
 
     [hotelMap addAnnotation:annotationPoint];
-    
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(annotationCoord, 25000, 25000);
-    MKCoordinateRegion adjustedRegion = [hotelMap regionThatFits:viewRegion];
-    
     hotelMap.centerCoordinate = annotationCoord;
-    [hotelMap setRegion:adjustedRegion animated:NO];
-    hotelMap.showsUserLocation = YES;
     
-    NSString *street = @"";
-    NSString *postalcode = @"";
-    NSString *city = @"";
-    NSString *country = @"";
+//    MKCoordinateSpan span;
+//    MKCoordinateRegion region;
+    
+//    span.latitudeDelta = 1;
+//    span.longitudeDelta = 1;
+//    region.center = annotationCoord;
+//    
+//    [hotelMap setRegion:region animated:YES];
+    
+    NSString *street = [[NSString alloc] initWithFormat:@"%@", [singleHotel valueForKey:@"address1"]];
+    NSString *postalcode = [[NSString alloc] initWithFormat:@"%@", [singleHotel valueForKey:@"postalCode"]];
+    NSString *city = [[NSString alloc] initWithFormat:@"%@", [singleHotel valueForKey:@"city"]];
+    NSString *country = [[NSString alloc] initWithFormat:@"%@", [singleHotel valueForKey:@"countryCode"]];
+    
+    NSNumber *proximity = [singleHotel valueForKey:@"proximityDistance"];
     
     distanceLabel.text = [[NSString alloc] initWithFormat:@"%d km", [proximity intValue]];
-    locationLabel.text =[[NSString alloc] initWithFormat:@"%@ %@\n%@, %@", street, postalcode, city, country];
+    locationLabel.text = [[NSString alloc] initWithFormat:@"%@ %@\n%@, %@", street, postalcode, city, country];
+    
+    hotelName.text = [[NSString alloc] initWithFormat:@"%@", [singleHotel valueForKey:@"name"]];
 }
 
 - (void)didReceiveMemoryWarning

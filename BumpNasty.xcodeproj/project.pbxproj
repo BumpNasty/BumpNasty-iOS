@@ -62,6 +62,7 @@
 		22D52CF51729682B00750181 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D52CEA1729682B00750181 /* Icon@2x.png */; };
 		22D52CF61729682B00750181 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D52CEB1729682B00750181 /* iTunesArtwork.png */; };
 		22D52CF71729682B00750181 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D52CEC1729682B00750181 /* iTunesArtwork@2x.png */; };
+		22D52CF91729691100750181 /* BumpNastyFinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D52CF81729691100750181 /* BumpNastyFinalViewController.m */; };
 		D0A631311729644A00CFA59B /* btn_bookroom.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A631301729644A00CFA59B /* btn_bookroom.png */; };
 		D0A6448B17292CF4008EB5F9 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A6447017292CF4008EB5F9 /* background.png */; };
 		D0A6448C17292CF4008EB5F9 /* btn_back_active.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A6447117292CF4008EB5F9 /* btn_back_active.png */; };
@@ -97,7 +98,6 @@
 		221FA8081729668000F912A4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		221FA80A1729668600F912A4 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		22207F7D172964D5005E6961 /* BumpNastyFinalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BumpNastyFinalViewController.h; sourceTree = "<group>"; };
-		22207F7E172964D5005E6961 /* BumpNastyFinalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BumpNastyFinalViewController.m; sourceTree = "<group>"; };
 		226B7567172847B200378CED /* BumpNasty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BumpNasty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		226B756A172847B200378CED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		226B756C172847B200378CED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -160,6 +160,7 @@
 		22D52CEA1729682B00750181 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		22D52CEB1729682B00750181 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		22D52CEC1729682B00750181 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		22D52CF81729691100750181 /* BumpNastyFinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BumpNastyFinalViewController.m; sourceTree = "<group>"; };
 		D0A631301729644A00CFA59B /* btn_bookroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_bookroom.png; sourceTree = "<group>"; };
 		D0A6447017292CF4008EB5F9 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		D0A6447117292CF4008EB5F9 /* btn_back_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_back_active.png; sourceTree = "<group>"; };
@@ -265,7 +266,7 @@
 				226B75A017285C3400378CED /* BumpNastyBumpViewController.m */,
 				226B75A21728648A00378CED /* FacebookUserObject.h */,
 				22207F7D172964D5005E6961 /* BumpNastyFinalViewController.h */,
-				22207F7E172964D5005E6961 /* BumpNastyFinalViewController.m */,
+				22D52CF81729691100750181 /* BumpNastyFinalViewController.m */,
 				226B75A31728648A00378CED /* FacebookUserObject.m */,
 				226B75F117292CDD00378CED /* BumpNastyHotelViewController.h */,
 				226B75F217292CDD00378CED /* BumpNastyHotelViewController.m */,
@@ -520,6 +521,7 @@
 				226B75ED172870F500378CED /* NMRangeSlider.m in Sources */,
 				226B75F317292CDD00378CED /* BumpNastyHotelViewController.m in Sources */,
 				226B75F617292DDC00378CED /* HotelObject.m in Sources */,
+				22D52CF91729691100750181 /* BumpNastyFinalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

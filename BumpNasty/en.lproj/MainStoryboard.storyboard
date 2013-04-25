@@ -31,28 +31,29 @@
                                     <action selector="facebookLogin:" destination="2" eventType="touchUpInside" id="XwG-IN-rqo"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Aoc-49-JdZ">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="136" id="fUn-aG-BuA"/>
-                                </constraints>
-                            </activityIndicatorView>
                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="8Rd-Xu-QQy" customClass="FBProfilePictureView">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" type="user" id="cme-m5-xc4"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="loading.gif" translatesAutoresizingMaskIntoConstraints="NO" id="wLU-Qv-EuT">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="HL4-ag-c6E"/>
+                                    <constraint firstAttribute="height" constant="166" id="dm7-wP-IMA"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862745098034" green="0.11764705882352941" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Aoc-49-JdZ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="207" id="0iZ-NE-cqi"/>
                             <constraint firstAttribute="centerX" secondItem="8Rd-Xu-QQy" secondAttribute="centerX" type="user" id="8eY-na-dh4"/>
-                            <constraint firstItem="Ybm-CD-bqY" firstAttribute="centerX" secondItem="Aoc-49-JdZ" secondAttribute="centerX" type="default" id="9pD-4k-wuY"/>
                             <constraint firstAttribute="centerX" secondItem="Ybm-CD-bqY" secondAttribute="centerX" type="user" id="AvY-pf-1HB"/>
                             <constraint firstItem="8Ae-Le-LyC" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="H7I-gV-vPF"/>
                             <constraint firstItem="8Ae-Le-LyC" firstAttribute="top" secondItem="3" secondAttribute="top" priority="1" type="user" id="IKI-ys-IYS"/>
                             <constraint firstAttribute="bottom" secondItem="Ybm-CD-bqY" secondAttribute="bottom" constant="75" id="PcT-yn-z4g"/>
                             <constraint firstItem="8Rd-Xu-QQy" firstAttribute="top" secondItem="3" secondAttribute="top" constant="155" type="user" id="SPl-lj-qhH"/>
+                            <constraint firstItem="wLU-Qv-EuT" firstAttribute="top" secondItem="3" secondAttribute="top" constant="216" id="hnX-Li-5F8"/>
+                            <constraint firstItem="wLU-Qv-EuT" firstAttribute="centerX" secondItem="8Rd-Xu-QQy" secondAttribute="centerX" type="default" id="pX6-HP-Tqo"/>
                             <constraint firstItem="8Ae-Le-LyC" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="rhl-Vm-LJd"/>
                             <constraint firstItem="8Rd-Xu-QQy" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="85" id="wdr-8D-kiB"/>
                             <constraint firstItem="8Ae-Le-LyC" firstAttribute="top" secondItem="3" secondAttribute="top" constant="34" id="wpc-3v-3ba"/>
@@ -61,7 +62,6 @@
                     <navigationItem key="navigationItem" id="fgl-J0-Hv0"/>
                     <connections>
                         <outlet property="facebookButton" destination="Ybm-CD-bqY" id="af2-4Q-PBG"/>
-                        <outlet property="fbIndicator" destination="Aoc-49-JdZ" id="Oy6-w4-PeW"/>
                         <outlet property="profilePicture" destination="8Rd-Xu-QQy" id="dSa-Qr-DNY"/>
                         <segue destination="kyM-yb-ytZ" kind="push" identifier="showBumpView" id="WpN-kK-XOB"/>
                     </connections>
@@ -476,12 +476,13 @@
                     <connections>
                         <outlet property="distanceLabel" destination="DPy-gP-T37" id="u7H-G1-eqa"/>
                         <outlet property="hotelMap" destination="pTU-Kl-sS6" id="NIb-AZ-ONp"/>
+                        <outlet property="hotelName" destination="aCR-60-n3K" id="Bp8-bs-ZxZ"/>
                         <outlet property="locationLabel" destination="q9l-mB-9UT" id="wYa-mA-jTB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2g-Hc-heG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1669" y="155"/>
+            <point key="canvasLocation" x="1766" y="159"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ibv-CV-8x4">
@@ -512,6 +513,7 @@
         <image name="btn_facebook.png" width="541" height="83"/>
         <image name="bump.png" width="640" height="503"/>
         <image name="icon_settings_navbar.png" width="38" height="41"/>
+        <image name="loading.gif" width="221" height="332"/>
         <image name="logo_navbar.png" width="195" height="59"/>
         <image name="navbar.png" width="640" height="90"/>
         <image name="startup_screen_no_button.png" width="640" height="960"/>
@@ -539,6 +541,7 @@
             <relationships>
                 <relationship kind="outlet" name="distanceLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="hotelMap" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="hotelName" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="locationLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
