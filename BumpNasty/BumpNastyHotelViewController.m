@@ -15,6 +15,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *priceLabel;
 @property (strong, nonatomic) IBOutlet UILabel *distanceLabel;
 @property (strong, nonatomic) IBOutlet UILabel *starLabel;
+@property (strong, nonatomic) IBOutlet UILabel *hotelName;
+
+- (IBAction)acceptHotel:(id)sender;
 
 @end
 
@@ -90,4 +93,6 @@
 }
 
 
+- (IBAction)acceptHotel:(id)sender {
+}
 @end
