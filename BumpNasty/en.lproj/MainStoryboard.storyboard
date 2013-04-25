@@ -9,7 +9,7 @@
             <objects>
                 <viewController storyboardIdentifier="startupViewController" id="2" customClass="BumpNastyStartupViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="startup_screen_no_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Ae-Le-LyC">
@@ -99,7 +99,7 @@
             <objects>
                 <viewController storyboardIdentifier="bumpViewController" id="kyM-yb-ytZ" customClass="BumpNastyBumpViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X8S-F8-tyQ">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="XbJ-Ip-ZOM"/>
@@ -261,17 +261,20 @@
             <objects>
                 <viewController storyboardIdentifier="hotelViewController" id="gu2-Mi-VA2" customClass="BumpNastyHotelViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Ku-vP-cbT">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaw-tR-W8J">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon_rating.png" translatesAutoresizingMaskIntoConstraints="NO" id="vgL-s0-XGu">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="7Jy-wG-xtt"/>
-                                    <constraint firstAttribute="height" constant="100" id="etu-X9-YmN"/>
+                                    <constraint firstAttribute="width" constant="36" id="Oqv-50-7xg"/>
+                                    <constraint firstAttribute="height" constant="32" id="h03-Ii-XDx"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ET-pP-eXL" customClass="FBProfilePictureView">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" type="user" id="1d8-kc-1Hl"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OI3-Yw-BCA">
                                 <constraints>
@@ -298,15 +301,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWw-JP-WnP">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDq-dq-JS8">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="84e-hn-nYq"/>
-                                    <constraint firstAttribute="width" constant="42" id="hdF-b1-zUM"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -363,31 +357,51 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUo-3T-mIO">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="UAd-PM-KjT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaw-tR-W8J">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="7Jy-wG-xtt"/>
+                                    <constraint firstAttribute="height" constant="100" id="etu-X9-YmN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDq-dq-JS8">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="CHe-zF-ZNN"/>
+                                    <constraint firstAttribute="width" constant="42" id="hdF-b1-zUM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="vgL-s0-XGu" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="106" id="00m-cn-TLO"/>
                             <constraint firstItem="5ET-pP-eXL" firstAttribute="top" secondItem="yaw-tR-W8J" secondAttribute="top" type="default" id="0gP-K2-X00"/>
                             <constraint firstItem="mIB-0l-uee" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="10" id="1kf-KS-BJq"/>
                             <constraint firstItem="aX1-Uu-q5H" firstAttribute="bottom" secondItem="HtR-8E-h27" secondAttribute="bottom" type="default" id="2Ac-Vo-Cnh"/>
                             <constraint firstItem="SWw-JP-WnP" firstAttribute="leading" secondItem="8lX-Me-eDm" secondAttribute="leading" type="default" id="4Zp-Rg-ckb"/>
                             <constraint firstItem="wUo-3T-mIO" firstAttribute="centerX" secondItem="28d-Im-7Bx" secondAttribute="centerX" type="default" id="7Cu-Kv-TVv"/>
                             <constraint firstItem="26f-jE-Rwz" firstAttribute="trailing" secondItem="OI3-Yw-BCA" secondAttribute="trailing" type="default" id="7uX-b6-2oZ"/>
+                            <constraint firstItem="wUo-3T-mIO" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="78" id="8QT-Gu-81a"/>
                             <constraint firstItem="28d-Im-7Bx" firstAttribute="top" secondItem="mIB-0l-uee" secondAttribute="top" type="default" id="8Zm-z8-U2i"/>
+                            <constraint firstAttribute="trailing" secondItem="vgL-s0-XGu" secondAttribute="trailing" constant="13" id="9SK-QI-q1g"/>
                             <constraint firstItem="28d-Im-7Bx" firstAttribute="centerY" secondItem="5oe-UI-ZcW" secondAttribute="centerY" type="default" id="CTD-e2-Itb"/>
                             <constraint firstItem="wUo-3T-mIO" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ETT-hx-QoG"/>
                             <constraint firstAttribute="bottom" secondItem="yzh-pY-7xb" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="FQU-Zg-g2a"/>
                             <constraint firstItem="SWw-JP-WnP" firstAttribute="baseline" secondItem="26f-jE-Rwz" secondAttribute="baseline" type="default" id="FUO-YB-hDI"/>
                             <constraint firstItem="HtR-8E-h27" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="GlX-PE-QPt"/>
-                            <constraint firstItem="wUo-3T-mIO" firstAttribute="baseline" secondItem="ZDq-dq-JS8" secondAttribute="baseline" type="default" id="NvM-IH-J5m"/>
+                            <constraint firstItem="ZDq-dq-JS8" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="109" id="Iym-6P-eUb"/>
                             <constraint firstItem="26f-jE-Rwz" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Pge-ou-eVw"/>
                             <constraint firstItem="5oe-UI-ZcW" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" type="default" id="QV1-4Z-3zJ"/>
                             <constraint firstItem="aX1-Uu-q5H" firstAttribute="top" secondItem="HtR-8E-h27" secondAttribute="top" type="default" id="SvA-6a-TU1"/>
                             <constraint firstAttribute="trailing" secondItem="8lX-Me-eDm" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Sxr-Yu-nJv"/>
-                            <constraint firstAttribute="bottom" secondItem="5ET-pP-eXL" secondAttribute="bottom" constant="339" id="TeR-3J-Xlk"/>
                             <constraint firstAttribute="trailing" secondItem="5ET-pP-eXL" secondAttribute="trailing" constant="200" id="VsV-2x-jOL"/>
                             <constraint firstAttribute="trailing" secondItem="wUo-3T-mIO" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Vzt-Ar-grH"/>
                             <constraint firstItem="OI3-Yw-BCA" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="263" id="WdN-52-c0G"/>
@@ -399,13 +413,11 @@
                             <constraint firstItem="26f-jE-Rwz" firstAttribute="top" secondItem="OI3-Yw-BCA" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="gEf-cD-FKb"/>
                             <constraint firstAttribute="trailing" secondItem="yaw-tR-W8J" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gwP-hB-ToL"/>
                             <constraint firstItem="8lX-Me-eDm" firstAttribute="baseline" secondItem="OI3-Yw-BCA" secondAttribute="baseline" type="default" id="kJ2-P2-jWF"/>
-                            <constraint firstItem="5ET-pP-eXL" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="121" id="m7S-Xb-dK3"/>
+                            <constraint firstItem="5ET-pP-eXL" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="121" type="user" id="m7S-Xb-dK3"/>
                             <constraint firstAttribute="trailing" secondItem="SWw-JP-WnP" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="p0O-jP-eVp"/>
-                            <constraint firstItem="ZDq-dq-JS8" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="-21" id="poz-5A-1f3"/>
                             <constraint firstItem="5ET-pP-eXL" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="rv6-7T-yWq"/>
-                            <constraint firstItem="wUo-3T-mIO" firstAttribute="top" secondItem="ZDq-dq-JS8" secondAttribute="top" type="default" id="sVL-AE-lje"/>
-                            <constraint firstItem="ZDq-dq-JS8" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="78" id="viS-RP-KBd"/>
                             <constraint firstItem="SWw-JP-WnP" firstAttribute="top" secondItem="8lX-Me-eDm" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="wm5-Zj-Ote"/>
+                            <constraint firstAttribute="trailing" secondItem="ZDq-dq-JS8" secondAttribute="trailing" constant="1" id="xYH-uW-Zeo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GUr-2S-h3d"/>
@@ -427,7 +439,7 @@
             <objects>
                 <viewController storyboardIdentifier="finalViewController" id="jK2-1q-1aE" customClass="BumpNastyFinalViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bG2-vp-DAX">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCR-60-n3K">
@@ -538,6 +550,7 @@
         <image name="btn_bookroom.png" width="541" height="83"/>
         <image name="btn_facebook.png" width="541" height="83"/>
         <image name="bump.png" width="640" height="503"/>
+        <image name="icon_rating.png" width="73" height="65"/>
         <image name="icon_settings_navbar.png" width="38" height="41"/>
         <image name="loading.gif" width="221" height="332"/>
         <image name="logo_navbar.png" width="195" height="59"/>
@@ -608,6 +621,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
