@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BumpNastyViewController : UIViewController
-
+@interface BumpNastyStartupViewController : UIViewController
+-(void)showFacebookLoginButton;
+-(void)showLoading;
+-(void)gotoBumpView;
+-(void)showPicture;
 @end
