@@ -170,10 +170,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo_navbar.png" translatesAutoresizingMaskIntoConstraints="NO" id="ADd-X6-db0">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="XqM-34-Rcb"/>
+                                    <constraint firstAttribute="height" constant="30" id="YeG-Ec-wWL"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862750000001" green="0.1176470588" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="mYf-8U-q2A" firstAttribute="top" secondItem="h2O-ve-Xy4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="11R-3d-KJO"/>
+                            <constraint firstItem="ADd-X6-db0" firstAttribute="top" secondItem="X8S-F8-tyQ" secondAttribute="top" constant="8" id="28d-bi-MCz"/>
                             <constraint firstItem="h2O-ve-Xy4" firstAttribute="leading" secondItem="X8S-F8-tyQ" secondAttribute="leading" type="default" id="2iX-iu-HPH"/>
                             <constraint firstItem="h2O-ve-Xy4" firstAttribute="top" secondItem="X8S-F8-tyQ" secondAttribute="top" type="default" id="35Z-WW-yKr"/>
                             <constraint firstAttribute="trailing" secondItem="fA9-YW-tYy" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="4iH-Up-GST"/>
@@ -186,12 +193,13 @@
                             <constraint firstAttribute="bottom" secondItem="1xU-zK-Wqg" secondAttribute="bottom" constant="69" id="GVa-IW-uIX"/>
                             <constraint firstAttribute="trailing" secondItem="98S-Cl-GU3" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="IuR-PP-Kpk"/>
                             <constraint firstItem="1xU-zK-Wqg" firstAttribute="top" secondItem="HKH-xJ-6lm" secondAttribute="top" type="default" id="MA8-0h-qCG"/>
+                            <constraint firstItem="ADd-X6-db0" firstAttribute="centerX" secondItem="fA9-YW-tYy" secondAttribute="centerX" type="default" id="MkW-Ox-izv"/>
                             <constraint firstAttribute="trailing" secondItem="dnL-tc-Gg3" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Mq8-Vg-t5p"/>
                             <constraint firstAttribute="centerX" secondItem="mYf-8U-q2A" secondAttribute="centerX" type="user" id="Ooa-2u-IkZ"/>
                             <constraint firstAttribute="trailing" secondItem="SOf-zP-I9Z" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Osy-pQ-Bca"/>
                             <constraint firstAttribute="trailing" secondItem="HKH-xJ-6lm" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Phu-jl-WBh"/>
+                            <constraint firstItem="ADd-X6-db0" firstAttribute="centerY" secondItem="8RR-Nt-ekg" secondAttribute="centerY" type="default" id="Pzu-in-uSi"/>
                             <constraint firstItem="HKH-xJ-6lm" firstAttribute="baseline" secondItem="1xU-zK-Wqg" secondAttribute="baseline" type="default" id="S77-vZ-neC"/>
-                            <constraint firstItem="8RR-Nt-ekg" firstAttribute="top" secondItem="X8S-F8-tyQ" secondAttribute="top" constant="13" id="Ssp-js-JUF"/>
                             <constraint firstAttribute="bottom" secondItem="fA9-YW-tYy" secondAttribute="bottom" constant="164" type="user" id="Uh5-yh-HMw"/>
                             <constraint firstItem="dnL-tc-Gg3" firstAttribute="leading" secondItem="fA9-YW-tYy" secondAttribute="leading" type="default" id="Z3i-vg-fGW"/>
                             <constraint firstItem="1xU-zK-Wqg" firstAttribute="leading" secondItem="98S-Cl-GU3" secondAttribute="leading" type="default" id="c69-3z-eR7"/>
@@ -285,6 +293,12 @@
                                     <constraint firstAttribute="width" constant="333" id="fUI-av-QnM"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo_navbar.png" translatesAutoresizingMaskIntoConstraints="NO" id="28d-Im-7Bx">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="R5L-iR-w0z"/>
+                                    <constraint firstAttribute="width" constant="98" id="w7w-en-3Bt"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzh-pY-7xb">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="SnI-r8-acZ"/>
@@ -326,17 +340,18 @@
                             <constraint firstItem="mIB-0l-uee" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="10" id="1kf-KS-BJq"/>
                             <constraint firstItem="SWw-JP-WnP" firstAttribute="leading" secondItem="8lX-Me-eDm" secondAttribute="leading" type="default" id="4Zp-Rg-ckb"/>
                             <constraint firstItem="26f-jE-Rwz" firstAttribute="trailing" secondItem="OI3-Yw-BCA" secondAttribute="trailing" type="default" id="7uX-b6-2oZ"/>
+                            <constraint firstItem="28d-Im-7Bx" firstAttribute="top" secondItem="mIB-0l-uee" secondAttribute="top" type="default" id="8Zm-z8-U2i"/>
+                            <constraint firstItem="28d-Im-7Bx" firstAttribute="centerY" secondItem="5oe-UI-ZcW" secondAttribute="centerY" type="default" id="CTD-e2-Itb"/>
                             <constraint firstAttribute="bottom" secondItem="yzh-pY-7xb" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="FQU-Zg-g2a"/>
                             <constraint firstItem="SWw-JP-WnP" firstAttribute="baseline" secondItem="26f-jE-Rwz" secondAttribute="baseline" type="default" id="FUO-YB-hDI"/>
                             <constraint firstItem="HtR-8E-h27" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="GlX-PE-QPt"/>
+                            <constraint firstItem="28d-Im-7Bx" firstAttribute="centerX" secondItem="6Ku-vP-cbT" secondAttribute="centerX" type="default" id="KtI-su-zZX"/>
                             <constraint firstItem="26f-jE-Rwz" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Pge-ou-eVw"/>
                             <constraint firstItem="5oe-UI-ZcW" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" type="default" id="QV1-4Z-3zJ"/>
-                            <constraint firstItem="mIB-0l-uee" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="8" id="Qmm-K7-tQq"/>
                             <constraint firstAttribute="trailing" secondItem="8lX-Me-eDm" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Sxr-Yu-nJv"/>
                             <constraint firstAttribute="trailing" secondItem="5ET-pP-eXL" secondAttribute="trailing" constant="200" id="VsV-2x-jOL"/>
                             <constraint firstItem="OI3-Yw-BCA" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="263" id="WdN-52-c0G"/>
                             <constraint firstItem="5oe-UI-ZcW" firstAttribute="centerX" secondItem="6Ku-vP-cbT" secondAttribute="centerX" type="default" id="XgF-v9-lj6"/>
-                            <constraint firstItem="yzh-pY-7xb" firstAttribute="centerX" secondItem="6Ku-vP-cbT" secondAttribute="centerX" type="default" id="XkP-DX-E2O"/>
                             <constraint firstItem="SWw-JP-WnP" firstAttribute="top" secondItem="26f-jE-Rwz" secondAttribute="top" type="default" id="acA-dB-i5U"/>
                             <constraint firstItem="OI3-Yw-BCA" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fWn-Su-2ue"/>
                             <constraint firstAttribute="trailing" secondItem="yaw-tR-W8J" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gwP-hB-ToL"/>
@@ -348,6 +363,7 @@
                             <constraint firstItem="5ET-pP-eXL" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="91" id="tZj-OS-eih"/>
                             <constraint firstItem="5ET-pP-eXL" firstAttribute="bottom" secondItem="yaw-tR-W8J" secondAttribute="bottom" type="default" id="tx0-vK-MEO"/>
                             <constraint firstItem="ZDq-dq-JS8" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="78" id="viS-RP-KBd"/>
+                            <constraint firstItem="28d-Im-7Bx" firstAttribute="centerX" secondItem="yzh-pY-7xb" secondAttribute="centerX" type="default" id="wjl-5H-ZJr"/>
                             <constraint firstItem="SWw-JP-WnP" firstAttribute="top" secondItem="8lX-Me-eDm" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="wm5-Zj-Ote"/>
                         </constraints>
                     </view>
@@ -479,6 +495,7 @@
         <image name="btn_facebook.png" width="541" height="83"/>
         <image name="bump.png" width="640" height="503"/>
         <image name="icon_settings_navbar.png" width="38" height="41"/>
+        <image name="logo_navbar.png" width="195" height="59"/>
         <image name="navbar.png" width="640" height="90"/>
         <image name="startup_screen_no_button.png" width="640" height="960"/>
     </resources>
