@@ -227,6 +227,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDq-dq-JS8">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="84e-hn-nYq"/>
+                                    <constraint firstAttribute="width" constant="42" id="hdF-b1-zUM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -241,12 +250,14 @@
                             <constraint firstItem="OI3-Yw-BCA" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="263" id="WdN-52-c0G"/>
                             <constraint firstItem="SWw-JP-WnP" firstAttribute="top" secondItem="26f-jE-Rwz" secondAttribute="top" type="default" id="acA-dB-i5U"/>
                             <constraint firstItem="OI3-Yw-BCA" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fWn-Su-2ue"/>
+                            <constraint firstAttribute="trailing" secondItem="ZDq-dq-JS8" secondAttribute="trailing" constant="8" id="fdl-QS-HCA"/>
                             <constraint firstAttribute="trailing" secondItem="yaw-tR-W8J" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gwP-hB-ToL"/>
                             <constraint firstItem="8lX-Me-eDm" firstAttribute="baseline" secondItem="OI3-Yw-BCA" secondAttribute="baseline" type="default" id="kJ2-P2-jWF"/>
                             <constraint firstAttribute="trailing" secondItem="SWw-JP-WnP" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="p0O-jP-eVp"/>
                             <constraint firstItem="5ET-pP-eXL" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="rv6-7T-yWq"/>
                             <constraint firstItem="5ET-pP-eXL" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="91" id="tZj-OS-eih"/>
                             <constraint firstItem="5ET-pP-eXL" firstAttribute="bottom" secondItem="yaw-tR-W8J" secondAttribute="bottom" type="default" id="tx0-vK-MEO"/>
+                            <constraint firstItem="ZDq-dq-JS8" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="78" id="viS-RP-KBd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GUr-2S-h3d"/>
@@ -255,6 +266,7 @@
                         <outlet property="hotelImage" destination="yaw-tR-W8J" id="l2Z-v6-7I2"/>
                         <outlet property="priceLabel" destination="26f-jE-Rwz" id="4gf-kV-NE9"/>
                         <outlet property="profilePicture" destination="5ET-pP-eXL" id="VCQ-il-38J"/>
+                        <outlet property="starLabel" destination="ZDq-dq-JS8" id="w1V-7z-WPj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F28-cv-acZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -312,6 +324,7 @@
                 <relationship kind="outlet" name="hotelImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="profilePicture" candidateClass="FBProfilePictureView"/>
+                <relationship kind="outlet" name="starLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="BumpNastyStartupViewController" superclassName="UIViewController">

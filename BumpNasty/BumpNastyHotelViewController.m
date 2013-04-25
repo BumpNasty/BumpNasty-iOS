@@ -14,12 +14,13 @@
 @property (strong, nonatomic) IBOutlet FBProfilePictureView *profilePicture;
 @property (strong, nonatomic) IBOutlet UILabel *priceLabel;
 @property (strong, nonatomic) IBOutlet UILabel *distanceLabel;
+@property (strong, nonatomic) IBOutlet UILabel *starLabel;
 
 @end
 
 @implementation BumpNastyHotelViewController
 
-@synthesize hotelImage, profilePicture, priceLabel, distanceLabel;
+@synthesize hotelImage, profilePicture, priceLabel, distanceLabel, starLabel;
 
 - (void)viewDidLoad
 {
@@ -50,15 +51,18 @@
     
     profilePicture.profileID = [(NSDictionary *)[hotelData objectForKey:@"other"] objectForKey:@"id"];
     
-    NSNumber *distanceNumber = [hotelData objectForKey:@"proximityDistance"];
+    NSNumber *distanceNumber = [singleHotel objectForKey:@"proximityDistance"];
     
     int distanceInt = distanceNumber.intValue;
     
-    NSString *price = [hotelData objectForKey:@"lowRate"];
+    NSString *price = [[NSString alloc] initWithFormat: @"%@",[singleHotel objectForKey:@"lowRate"]];
     NSString *distance = [[NSString alloc] initWithFormat:@"%d", distanceInt];
+    
+    NSString *star = [singleHotel objectForKey:@"hotelRating"];
     
     priceLabel.text = price;
     distanceLabel.text = distance;
+    starLabel.text = star;
     
 //    CGSize size = img.size;
     
