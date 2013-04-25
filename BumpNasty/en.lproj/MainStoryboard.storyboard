@@ -85,6 +85,20 @@
                                     <constraint firstAttribute="height" constant="45" id="Usc-1Q-Mwf"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8RR-Nt-ekg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="2mA-5F-3YG"/>
+                                    <constraint firstAttribute="height" constant="20" id="RBL-qH-DCU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="icon_settings_navbar.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bump.png" translatesAutoresizingMaskIntoConstraints="NO" id="mYf-8U-q2A">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="326" id="C9Y-cr-FEy"/>
@@ -177,6 +191,7 @@
                             <constraint firstAttribute="trailing" secondItem="SOf-zP-I9Z" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Osy-pQ-Bca"/>
                             <constraint firstAttribute="trailing" secondItem="HKH-xJ-6lm" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Phu-jl-WBh"/>
                             <constraint firstItem="HKH-xJ-6lm" firstAttribute="baseline" secondItem="1xU-zK-Wqg" secondAttribute="baseline" type="default" id="S77-vZ-neC"/>
+                            <constraint firstItem="8RR-Nt-ekg" firstAttribute="top" secondItem="X8S-F8-tyQ" secondAttribute="top" constant="13" id="Ssp-js-JUF"/>
                             <constraint firstAttribute="bottom" secondItem="fA9-YW-tYy" secondAttribute="bottom" constant="164" type="user" id="Uh5-yh-HMw"/>
                             <constraint firstItem="dnL-tc-Gg3" firstAttribute="leading" secondItem="fA9-YW-tYy" secondAttribute="leading" type="default" id="Z3i-vg-fGW"/>
                             <constraint firstItem="1xU-zK-Wqg" firstAttribute="leading" secondItem="98S-Cl-GU3" secondAttribute="leading" type="default" id="c69-3z-eR7"/>
@@ -184,6 +199,7 @@
                             <constraint firstItem="uOY-p7-O5j" firstAttribute="top" secondItem="fA9-YW-tYy" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="gpE-ee-pHp"/>
                             <constraint firstAttribute="bottom" secondItem="98S-Cl-GU3" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="gzT-pl-gyZ"/>
                             <constraint firstItem="BXK-AU-vQ4" firstAttribute="leading" secondItem="fA9-YW-tYy" secondAttribute="leading" type="default" id="hos-vx-aIe"/>
+                            <constraint firstAttribute="trailing" secondItem="8RR-Nt-ekg" secondAttribute="trailing" constant="12" id="hry-LS-L0p"/>
                             <constraint firstItem="XbJ-Ip-ZOM" firstAttribute="leading" secondItem="X8S-F8-tyQ" secondAttribute="leading" type="default" id="nfL-Bs-0PY"/>
                             <constraint firstItem="dnL-tc-Gg3" firstAttribute="leading" secondItem="1xU-zK-Wqg" secondAttribute="leading" type="default" id="qzG-di-pOq"/>
                             <constraint firstItem="BXK-AU-vQ4" firstAttribute="top" secondItem="SOf-zP-I9Z" secondAttribute="top" type="default" id="r0i-MH-50v"/>
@@ -265,13 +281,17 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="navbar.png" translatesAutoresizingMaskIntoConstraints="NO" id="5oe-UI-ZcW">
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="FA2-8C-4x6"/>
                                     <constraint firstAttribute="width" constant="333" id="fUI-av-QnM"/>
-                                    <constraint firstAttribute="height" constant="45" id="oMB-Nv-thv"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIB-0l-uee">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIB-0l-uee">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Jnv-B0-KMk"/>
+                                    <constraint firstAttribute="height" constant="29" id="OI9-8p-HQU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" image="btn_back.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -283,12 +303,13 @@
                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="5ET-pP-eXL" firstAttribute="top" secondItem="yaw-tR-W8J" secondAttribute="top" type="default" id="0gP-K2-X00"/>
+                            <constraint firstItem="mIB-0l-uee" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="10" id="1kf-KS-BJq"/>
                             <constraint firstItem="SWw-JP-WnP" firstAttribute="leading" secondItem="8lX-Me-eDm" secondAttribute="leading" type="default" id="4Zp-Rg-ckb"/>
                             <constraint firstItem="26f-jE-Rwz" firstAttribute="trailing" secondItem="OI3-Yw-BCA" secondAttribute="trailing" type="default" id="7uX-b6-2oZ"/>
                             <constraint firstItem="SWw-JP-WnP" firstAttribute="baseline" secondItem="26f-jE-Rwz" secondAttribute="baseline" type="default" id="FUO-YB-hDI"/>
-                            <constraint firstItem="mIB-0l-uee" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="8" id="Fc8-FY-K1C"/>
                             <constraint firstItem="26f-jE-Rwz" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Pge-ou-eVw"/>
                             <constraint firstItem="5oe-UI-ZcW" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" type="default" id="QV1-4Z-3zJ"/>
+                            <constraint firstItem="mIB-0l-uee" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="8" id="Qmm-K7-tQq"/>
                             <constraint firstAttribute="trailing" secondItem="8lX-Me-eDm" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Sxr-Yu-nJv"/>
                             <constraint firstAttribute="trailing" secondItem="5ET-pP-eXL" secondAttribute="trailing" constant="200" id="VsV-2x-jOL"/>
                             <constraint firstItem="OI3-Yw-BCA" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="263" id="WdN-52-c0G"/>
@@ -300,7 +321,6 @@
                             <constraint firstItem="8lX-Me-eDm" firstAttribute="baseline" secondItem="OI3-Yw-BCA" secondAttribute="baseline" type="default" id="kJ2-P2-jWF"/>
                             <constraint firstAttribute="bottom" secondItem="26f-jE-Rwz" secondAttribute="bottom" constant="234" id="krP-Qr-Sad"/>
                             <constraint firstAttribute="trailing" secondItem="SWw-JP-WnP" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="p0O-jP-eVp"/>
-                            <constraint firstItem="mIB-0l-uee" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" type="default" id="qAf-Cg-ha3"/>
                             <constraint firstItem="5ET-pP-eXL" firstAttribute="leading" secondItem="6Ku-vP-cbT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="rv6-7T-yWq"/>
                             <constraint firstItem="5ET-pP-eXL" firstAttribute="top" secondItem="6Ku-vP-cbT" secondAttribute="top" constant="91" id="tZj-OS-eih"/>
                             <constraint firstItem="5ET-pP-eXL" firstAttribute="bottom" secondItem="yaw-tR-W8J" secondAttribute="bottom" type="default" id="tx0-vK-MEO"/>
@@ -344,8 +364,10 @@
     </scenes>
     <resources>
         <image name="background.png" width="640" height="960"/>
+        <image name="btn_back.png" width="99" height="58"/>
         <image name="btn_facebook.png" width="541" height="83"/>
         <image name="bump.png" width="640" height="503"/>
+        <image name="icon_settings_navbar.png" width="38" height="41"/>
         <image name="navbar.png" width="640" height="90"/>
         <image name="startup_screen_no_button.png" width="640" height="960"/>
     </resources>
