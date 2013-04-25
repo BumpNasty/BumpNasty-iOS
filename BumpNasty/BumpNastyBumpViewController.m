@@ -190,11 +190,23 @@ static const NSTimeInterval accelerometerMin = 0.01;
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:appDelegate.received options:NSJSONReadingMutableLeaves error:&jsonError];
     
     if (json) {
-//        self.label.text = [json objectForKey:@"error"];
+//        self.label.text = ;
         
-        appDelegate.hotel = [[HotelObject alloc] initWithData:json];
+        NSString *error = [[NSString alloc] initWithFormat:@"%@", [json valueForKey:@"error"]];
         
-        [self gotoHotelView];
+        if ([error isEqual: @"timeout"]) {
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Bump failed" message:@"We did not register both bumps. Please try again" delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
+            // optional - add more buttons:
+            [alert addButtonWithTitle:@"Close"];
+            [alert show];
+            
+            [self checkBumping];
+        } else {
+            appDelegate.hotel = [[HotelObject alloc] initWithData:json];
+            
+            [self gotoHotelView];
+        }
         //NSLog(@"%@", json);
     }
     
