@@ -237,7 +237,6 @@
 			children = (
 				221FA80A1729668600F912A4 /* Icon@2x.png */,
 				221FA8081729668000F912A4 /* Icon.png */,
-				221FA7EF1729663100F912A4 /* MapKit.framework */,
 				226B7570172847B200378CED /* BumpNasty */,
 				226B7569172847B200378CED /* Frameworks */,
 				226B7568172847B200378CED /* Products */,
@@ -255,6 +254,7 @@
 		226B7569172847B200378CED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				221FA7EF1729663100F912A4 /* MapKit.framework */,
 				226B76321729557100378CED /* FacebookSDKResources.bundle */,
 				226B75F717294E4B00378CED /* FacebookSDK.framework */,
 				226B759D1728487400378CED /* CoreLocation.framework */,
