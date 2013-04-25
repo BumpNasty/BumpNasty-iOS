@@ -62,6 +62,7 @@
 		226B75F617292DDC00378CED /* HotelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 226B75F517292DDC00378CED /* HotelObject.m */; };
 		226B75F817294E4B00378CED /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226B75F717294E4B00378CED /* FacebookSDK.framework */; };
 		226B76331729557100378CED /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 226B76321729557100378CED /* FacebookSDKResources.bundle */; };
+		D0A631311729644A00CFA59B /* btn_bookroom.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A631301729644A00CFA59B /* btn_bookroom.png */; };
 		D0A6448B17292CF4008EB5F9 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A6447017292CF4008EB5F9 /* background.png */; };
 		D0A6448C17292CF4008EB5F9 /* btn_back_active.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A6447117292CF4008EB5F9 /* btn_back_active.png */; };
 		D0A6448D17292CF4008EB5F9 /* btn_back.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A6447217292CF4008EB5F9 /* btn_back.png */; };
@@ -159,6 +160,7 @@
 		226B75F517292DDC00378CED /* HotelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelObject.m; sourceTree = "<group>"; };
 		226B75F717294E4B00378CED /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = BumpNasty/FacebookSDK.framework; sourceTree = "<group>"; };
 		226B76321729557100378CED /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = BumpNasty/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		D0A631301729644A00CFA59B /* btn_bookroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_bookroom.png; sourceTree = "<group>"; };
 		D0A6447017292CF4008EB5F9 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		D0A6447117292CF4008EB5F9 /* btn_back_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_back_active.png; sourceTree = "<group>"; };
 		D0A6447217292CF4008EB5F9 /* btn_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_back.png; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 		D0A6446F17292CAB008EB5F9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D0A631301729644A00CFA59B /* btn_bookroom.png */,
 				D0A6447017292CF4008EB5F9 /* background.png */,
 				D0A6447117292CF4008EB5F9 /* btn_back_active.png */,
 				D0A6447217292CF4008EB5F9 /* btn_back.png */,
@@ -498,6 +501,7 @@
 				221FA8071729666800F912A4 /* iTunesArtwork@2x.png in Resources */,
 				221FA8091729668000F912A4 /* Icon.png in Resources */,
 				221FA80B1729668600F912A4 /* Icon@2x.png in Resources */,
+				D0A631311729644A00CFA59B /* btn_bookroom.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
