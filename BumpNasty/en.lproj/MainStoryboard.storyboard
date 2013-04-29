@@ -9,7 +9,7 @@
             <objects>
                 <viewController storyboardIdentifier="startupViewController" id="2" customClass="BumpNastyStartupViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="startup_screen_no_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Ae-Le-LyC">
@@ -39,7 +39,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="loading0.png" translatesAutoresizingMaskIntoConstraints="NO" id="wLU-Qv-EuT">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="HL4-ag-c6E"/>
-                                    <constraint firstAttribute="height" constant="166" id="dm7-wP-IMA"/>
+                                    <constraint firstAttribute="height" constant="166" type="user" id="dm7-wP-IMA"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="8Rd-Xu-QQy" customClass="FBProfilePictureView">
@@ -69,7 +69,7 @@
                             <constraint firstItem="vjM-fh-Gnb" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="O7R-Eh-I1f"/>
                             <constraint firstItem="8Rd-Xu-QQy" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="72" type="user" id="beJ-RT-svV"/>
                             <constraint firstAttribute="trailing" secondItem="8Rd-Xu-QQy" secondAttribute="trailing" constant="144" type="user" id="ftJ-2H-jGP"/>
-                            <constraint firstItem="wLU-Qv-EuT" firstAttribute="top" secondItem="3" secondAttribute="top" constant="216" id="hnX-Li-5F8"/>
+                            <constraint firstItem="wLU-Qv-EuT" firstAttribute="top" secondItem="3" secondAttribute="top" constant="241" type="user" id="jRF-aS-8bY"/>
                             <constraint firstItem="vjM-fh-Gnb" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="lMd-vN-Dj4"/>
                             <constraint firstItem="8Ae-Le-LyC" firstAttribute="bottom" secondItem="SOn-mv-q5p" secondAttribute="bottom" type="user" id="mXx-kq-cuB"/>
                             <constraint firstItem="8Ae-Le-LyC" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="rhl-Vm-LJd"/>
@@ -99,7 +99,7 @@
             <objects>
                 <viewController storyboardIdentifier="bumpViewController" id="kyM-yb-ytZ" customClass="BumpNastyBumpViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X8S-F8-tyQ">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="XbJ-Ip-ZOM"/>
@@ -250,7 +250,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="loading0.png" translatesAutoresizingMaskIntoConstraints="NO" id="bFf-sc-iG8">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="166" id="jge-tv-Duy"/>
+                                    <constraint firstAttribute="height" constant="166" type="user" id="jge-tv-Duy"/>
                                     <constraint firstAttribute="width" constant="110" id="sOE-QJ-797"/>
                                 </constraints>
                             </imageView>
@@ -266,7 +266,6 @@
                             <constraint firstItem="HKH-xJ-6lm" firstAttribute="trailing" secondItem="uOY-p7-O5j" secondAttribute="trailing" type="default" id="6QE-b5-ri1"/>
                             <constraint firstItem="BXK-AU-vQ4" firstAttribute="baseline" secondItem="SOf-zP-I9Z" secondAttribute="baseline" type="default" id="7Nq-ws-BgA"/>
                             <constraint firstItem="SOf-zP-I9Z" firstAttribute="trailing" secondItem="fA9-YW-tYy" secondAttribute="trailing" type="default" id="Akm-5V-GGz"/>
-                            <constraint firstItem="bFf-sc-iG8" firstAttribute="centerX" secondItem="t8D-mo-0jx" secondAttribute="centerX" type="default" id="AqY-7J-ZZ5"/>
                             <constraint firstItem="fA9-YW-tYy" firstAttribute="top" secondItem="X8S-F8-tyQ" secondAttribute="top" constant="344" id="BCV-Go-dgM"/>
                             <constraint firstItem="SOf-zP-I9Z" firstAttribute="top" secondItem="X8S-F8-tyQ" secondAttribute="top" constant="326" type="user" id="Bri-62-I8X"/>
                             <constraint firstItem="ADd-X6-db0" firstAttribute="leading" secondItem="X8S-F8-tyQ" secondAttribute="leading" constant="113" id="CdB-PJ-6lB"/>
@@ -275,7 +274,6 @@
                             <constraint firstItem="1xU-zK-Wqg" firstAttribute="top" secondItem="X8S-F8-tyQ" secondAttribute="top" constant="403" type="user" id="HaE-Yc-qYc"/>
                             <constraint firstItem="Noz-oz-j7W" firstAttribute="top" secondItem="X8S-F8-tyQ" secondAttribute="top" constant="423" type="user" id="IBd-a9-8Fa"/>
                             <constraint firstItem="dnL-tc-Gg3" firstAttribute="leading" secondItem="Znv-V3-o6l" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="LbI-Qm-D9E"/>
-                            <constraint firstItem="bFf-sc-iG8" firstAttribute="top" secondItem="X8S-F8-tyQ" secondAttribute="top" constant="216" id="MAL-qd-Ik3"/>
                             <constraint firstItem="Znv-V3-o6l" firstAttribute="leading" secondItem="VSp-oO-pHh" secondAttribute="leading" type="default" id="Mn5-FH-Cjr"/>
                             <constraint firstItem="dnL-tc-Gg3" firstAttribute="top" secondItem="X8S-F8-tyQ" secondAttribute="top" constant="383" type="user" id="N7q-Xx-WEx"/>
                             <constraint firstItem="98S-Cl-GU3" firstAttribute="trailing" secondItem="dnL-tc-Gg3" secondAttribute="trailing" type="default" id="NF2-bv-0BN"/>
@@ -284,6 +282,7 @@
                             <constraint firstItem="ADd-X6-db0" firstAttribute="centerY" secondItem="8RR-Nt-ekg" secondAttribute="centerY" type="default" id="Pzu-in-uSi"/>
                             <constraint firstItem="uOY-p7-O5j" firstAttribute="trailing" secondItem="fA9-YW-tYy" secondAttribute="trailing" type="default" id="Qhh-2H-aWm"/>
                             <constraint firstItem="VSp-oO-pHh" firstAttribute="leading" secondItem="X8S-F8-tyQ" secondAttribute="leading" constant="21" id="U9k-sI-Qfk"/>
+                            <constraint firstItem="bFf-sc-iG8" firstAttribute="top" secondItem="X8S-F8-tyQ" secondAttribute="top" constant="241" type="user" id="WBN-IM-0Gn"/>
                             <constraint firstItem="Noz-oz-j7W" firstAttribute="leading" secondItem="Znv-V3-o6l" secondAttribute="leading" type="default" id="WeM-Uo-Fx0"/>
                             <constraint firstItem="1xU-zK-Wqg" firstAttribute="leading" secondItem="BXK-AU-vQ4" secondAttribute="leading" type="default" id="aug-7e-YjT"/>
                             <constraint firstItem="1xU-zK-Wqg" firstAttribute="leading" secondItem="Noz-oz-j7W" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="bTq-fg-Tk7"/>
@@ -300,6 +299,7 @@
                             <constraint firstItem="XbJ-Ip-ZOM" firstAttribute="leading" secondItem="X8S-F8-tyQ" secondAttribute="leading" type="default" id="nfL-Bs-0PY"/>
                             <constraint firstItem="XbJ-Ip-ZOM" firstAttribute="bottom" secondItem="X8S-F8-tyQ" secondAttribute="bottom" type="default" id="uob-xX-5Xh"/>
                             <constraint firstItem="HKH-xJ-6lm" firstAttribute="top" secondItem="X8S-F8-tyQ" secondAttribute="top" constant="403" type="user" id="v5l-58-tD8"/>
+                            <constraint firstItem="bFf-sc-iG8" firstAttribute="centerX" secondItem="t8D-mo-0jx" secondAttribute="centerX" type="default" id="xPu-jB-avm"/>
                             <constraint firstItem="mYf-8U-q2A" firstAttribute="top" secondItem="X8S-F8-tyQ" secondAttribute="top" type="default" id="xSd-g7-H8h"/>
                             <constraint firstItem="98S-Cl-GU3" firstAttribute="top" secondItem="X8S-F8-tyQ" secondAttribute="top" constant="426" type="user" id="xoW-iv-vjZ"/>
                             <constraint firstItem="8RR-Nt-ekg" firstAttribute="trailing" secondItem="SOf-zP-I9Z" secondAttribute="trailing" type="default" id="zcd-7F-FVF"/>
@@ -332,7 +332,7 @@
             <objects>
                 <viewController storyboardIdentifier="hotelViewController" id="gu2-Mi-VA2" customClass="BumpNastyHotelViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Ku-vP-cbT">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ET-pP-eXL" customClass="FBProfilePictureView">
@@ -510,7 +510,7 @@
             <objects>
                 <viewController storyboardIdentifier="finalViewController" id="jK2-1q-1aE" customClass="BumpNastyFinalViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bG2-vp-DAX">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCR-60-n3K">
@@ -661,9 +661,75 @@
         <image name="navbar.png" width="640" height="90"/>
         <image name="startup_screen_no_button.png" width="640" height="960"/>
     </resources>
+    <classes>
+        <class className="BumpNastyBumpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BumpNastyBumpViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="distanceSliderChanged:"/>
+                <relationship kind="action" name="priceSliderChanged:"/>
+                <relationship kind="action" name="starSliderChanged:"/>
+                <relationship kind="outlet" name="distanceInfoLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="distanceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="distanceSlider" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="loadingBackground" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="loadingImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="maxPriceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="maxStarsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="minPriceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="minStarsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="priceInfoLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="priceSlider" candidateClass="NMRangeSlider"/>
+                <relationship kind="outlet" name="profilePicture" candidateClass="FBProfilePictureView"/>
+                <relationship kind="outlet" name="starSlider" candidateClass="NMRangeSlider"/>
+                <relationship kind="outlet" name="starsInfoLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="BumpNastyFinalViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BumpNastyFinalViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="distanceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hotelMap" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="hotelName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="locationLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="BumpNastyHotelViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BumpNastyHotelViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="acceptHotel:"/>
+                <relationship kind="outlet" name="distanceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hotelImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="hotelName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="profilePicture" candidateClass="FBProfilePictureView"/>
+                <relationship kind="outlet" name="starLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="BumpNastyStartupViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BumpNastyStartupViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="facebookLogin:"/>
+                <relationship kind="outlet" name="facebookButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="loadingBackground" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="loadingImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="pictureBackground" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="profilePicture" candidateClass="FBProfilePictureView"/>
+                <relationship kind="outlet" name="startupBackground" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="FBProfilePictureView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FBProfilePictureView.h"/>
+        </class>
+        <class className="NMRangeSlider" superclassName="UIControl">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NMRangeSlider.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>
