@@ -19,20 +19,48 @@ static const NSTimeInterval accelerometerMin = 0.01;
 @property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *minStarsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *maxStarsLabel;
+@property (strong, nonatomic) IBOutlet UILabel *priceInfoLabel;
+@property (strong, nonatomic) IBOutlet UILabel *distanceInfoLabel;
+@property (strong, nonatomic) IBOutlet UILabel *starsInfoLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *loadingBackground;
+@property (strong, nonatomic) IBOutlet UIImageView *loadingImage;
 
 @end
 
 @implementation BumpNastyBumpViewController
 
-@synthesize locationManager, loadingBackground;
+@synthesize locationManager, loadingBackground, minPriceLabel, maxPriceLabel, distanceLabel, minStarsLabel, maxStarsLabel, priceInfoLabel, distanceInfoLabel, starsInfoLabel, loadingImage;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    loadingImage.animationImages = [NSArray arrayWithObjects:
+                                    [UIImage imageNamed:@"loading0.png"],
+                                    [UIImage imageNamed:@"loading1.png"],
+                                    [UIImage imageNamed:@"loading2.png"],
+                                    [UIImage imageNamed:@"loading3.png"],
+                                    [UIImage imageNamed:@"loading4.png"],
+                                    [UIImage imageNamed:@"loading5.png"],
+                                    [UIImage imageNamed:@"loading6.png"],
+                                    [UIImage imageNamed:@"loading7.png"],
+                                    [UIImage imageNamed:@"loading8.png"],
+                                    [UIImage imageNamed:@"loading9.png"]
+                                    , nil];
+    
+    loadingImage.animationDuration = 1.0;
+    loadingImage.animationRepeatCount = 0;
+    
+    
+    UIFont *missionScriptFont = [UIFont fontWithName:@"Mission Script" size: 24.0];
+        
+    [priceInfoLabel setFont: missionScriptFont];
+    [distanceInfoLabel setFont: missionScriptFont];
+    [starsInfoLabel setFont: missionScriptFont];
+    
     [loadingBackground setHidden:YES];
+    [loadingImage setHidden:YES];
 
 //NSLog(@"%@", appDelegate.fbUser.userID);
   
@@ -105,7 +133,8 @@ static const NSTimeInterval accelerometerMin = 0.01;
         [mManager stopAccelerometerUpdates];
         
         [loadingBackground setHidden:NO];
-        
+        [loadingImage startAnimating];
+        [loadingImage setHidden:NO];
         [self getHotel];
     }
     
@@ -205,6 +234,8 @@ static const NSTimeInterval accelerometerMin = 0.01;
             [alert show];
             
             [loadingBackground setHidden:YES];
+            [loadingImage stopAnimating];
+            [loadingImage setHidden:YES];
 
             
             [self checkBumping];

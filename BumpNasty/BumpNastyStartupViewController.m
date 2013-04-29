@@ -28,6 +28,23 @@
 {
     [super viewDidLoad];
 
+    loadingImage.animationImages = [NSArray arrayWithObjects:
+                                        [UIImage imageNamed:@"loading0.png"],
+                                        [UIImage imageNamed:@"loading1.png"],
+                                        [UIImage imageNamed:@"loading2.png"],
+                                        [UIImage imageNamed:@"loading3.png"],
+                                        [UIImage imageNamed:@"loading4.png"],
+                                        [UIImage imageNamed:@"loading5.png"],
+                                        [UIImage imageNamed:@"loading6.png"],
+                                        [UIImage imageNamed:@"loading7.png"],
+                                        [UIImage imageNamed:@"loading8.png"],
+                                        [UIImage imageNamed:@"loading9.png"]
+                                        , nil];
+    
+    loadingImage.animationDuration = 1.0;
+    loadingImage.animationRepeatCount = 0;
+    [loadingImage startAnimating];
+    
     [self.profilePicture setHidden:YES];
     [self.loadingBackground setHidden:YES];
     [self.pictureBackground setHidden:YES];

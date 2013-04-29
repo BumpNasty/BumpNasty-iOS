@@ -11,6 +11,7 @@
 #import "BumpNastyBumpViewController.h"
 
 #import <FacebookSDK/FacebookSDK.h>
+#import "TestFlight.h"
 
 @implementation BumpNastyAppDelegate
 
@@ -18,6 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [TestFlight takeOff:@"a792a3f4-4ffa-4b45-b800-da82a20ca0b2"];
+    
     [FBProfilePictureView class];
     
     navigationController = (UINavigationController *)self.window.rootViewController;
