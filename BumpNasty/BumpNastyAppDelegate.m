@@ -110,11 +110,18 @@
     switch (state) {
         case FBSessionStateOpen: {
             
+            NSLog(@"OPEN");
+            
             [[FBRequest requestForMe] startWithCompletionHandler:
              ^(FBRequestConnection *connection,
                NSDictionary<FBGraphUser> *user,
                NSError *error) {
+                 
+                NSLog(@"REQUEST");
+                 
                  if (!error) {
+                     
+                    NSLog(@"GOOD");
                      
                      self.fbUser = [[FacebookUserObject alloc] initWithUser:user];
                      
@@ -126,6 +133,9 @@
                          [self showPicture];
                      }
                  } else {
+                     
+                     NSLog(@"BAD");
+                     
                      [FBSession.activeSession closeAndClearTokenInformation];
                      
                      loggedIn = NO;
@@ -153,13 +163,13 @@
         loggedIn = NO;
         
         [self showFacebookLogin];
-//        UIAlertView *alertView = [[UIAlertView alloc]
-//                                  initWithTitle:@"Error"
-//                                  message:error.localizedDescription
-//                                  delegate:nil
-//                                  cancelButtonTitle:@"OK"
-//                                  otherButtonTitles:nil];
-//        [alertView show];
+        UIAlertView *alertView = [[UIAlertView alloc]
+                                  initWithTitle:@"Error"
+                                  message:error.localizedDescription
+                                  delegate:nil
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+        [alertView show];
     }
 }
 

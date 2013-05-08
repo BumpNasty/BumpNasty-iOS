@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220CA5381737B4C200A93EEF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220CA5371737B4C200A93EEF /* QuartzCore.framework */; };
 		221FA7F01729663100F912A4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221FA7EF1729663100F912A4 /* MapKit.framework */; };
 		2230E26F172EBBF00000EFB5 /* Mission-Script.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2230E26E172EBBD90000EFB5 /* Mission-Script.otf */; };
 		2230E272172EBF9D0000EFB5 /* SetupAndBump.png in Resources */ = {isa = PBXBuildFile; fileRef = 2230E271172EBF9D0000EFB5 /* SetupAndBump.png */; };
@@ -23,6 +24,8 @@
 		2230E29C172ECD290000EFB5 /* Loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 2230E29B172ECD290000EFB5 /* Loading.png */; };
 		2230E29D172ED5460000EFB5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D52CE91729682B00750181 /* Icon.png */; };
 		2230E29E172ED54C0000EFB5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D52CEA1729682B00750181 /* Icon@2x.png */; };
+		224E9E0E172EEC1E0095EBD2 /* image-border.png in Resources */ = {isa = PBXBuildFile; fileRef = 224E9E0D172EEC1E0095EBD2 /* image-border.png */; };
+		224E9E10172EEDB90095EBD2 /* hotelBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 224E9E0F172EEDB90095EBD2 /* hotelBackground.png */; };
 		226B756B172847B200378CED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226B756A172847B200378CED /* UIKit.framework */; };
 		226B756D172847B200378CED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226B756C172847B200378CED /* Foundation.framework */; };
 		226B756F172847B200378CED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226B756E172847B200378CED /* CoreGraphics.framework */; };
@@ -114,6 +117,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		220CA5371737B4C200A93EEF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		221FA7EF1729663100F912A4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		22207F7D172964D5005E6961 /* BumpNastyFinalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BumpNastyFinalViewController.h; sourceTree = "<group>"; };
 		2230E26E172EBBD90000EFB5 /* Mission-Script.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mission-Script.otf"; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 		2230E28F172ECC6D0000EFB5 /* loading8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading8.png; sourceTree = "<group>"; };
 		2230E290172ECC6D0000EFB5 /* loading9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading9.png; sourceTree = "<group>"; };
 		2230E29B172ECD290000EFB5 /* Loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Loading.png; sourceTree = "<group>"; };
+		224E9E0D172EEC1E0095EBD2 /* image-border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image-border.png"; sourceTree = "<group>"; };
+		224E9E0F172EEDB90095EBD2 /* hotelBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hotelBackground.png; sourceTree = "<group>"; };
 		226B7567172847B200378CED /* BumpNasty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BumpNasty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		226B756A172847B200378CED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		226B756C172847B200378CED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -240,6 +246,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220CA5381737B4C200A93EEF /* QuartzCore.framework in Frameworks */,
 				229C5455172EB141001A06AD /* libz.dylib in Frameworks */,
 				221FA7F01729663100F912A4 /* MapKit.framework in Frameworks */,
 				226B759E1728487400378CED /* CoreLocation.framework in Frameworks */,
@@ -263,6 +270,7 @@
 		2230E270172EBF9D0000EFB5 /* Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				224E9E0F172EEDB90095EBD2 /* hotelBackground.png */,
 				2230E29B172ECD290000EFB5 /* Loading.png */,
 				2230E271172EBF9D0000EFB5 /* SetupAndBump.png */,
 			);
@@ -272,6 +280,7 @@
 		226B755E172847B200378CED = {
 			isa = PBXGroup;
 			children = (
+				220CA5371737B4C200A93EEF /* QuartzCore.framework */,
 				22D6A66E172ED67F0012193F /* Default-568h@2x.png */,
 				22D6A66C172ED6770012193F /* Default@2x.png */,
 				22D6A66A172ED6720012193F /* Default.png */,
@@ -323,9 +332,9 @@
 				226B759F17285C3400378CED /* BumpNastyBumpViewController.h */,
 				226B75A017285C3400378CED /* BumpNastyBumpViewController.m */,
 				226B75A21728648A00378CED /* FacebookUserObject.h */,
+				226B75A31728648A00378CED /* FacebookUserObject.m */,
 				22207F7D172964D5005E6961 /* BumpNastyFinalViewController.h */,
 				22D52CF81729691100750181 /* BumpNastyFinalViewController.m */,
-				226B75A31728648A00378CED /* FacebookUserObject.m */,
 				226B75F117292CDD00378CED /* BumpNastyHotelViewController.h */,
 				226B75F217292CDD00378CED /* BumpNastyHotelViewController.m */,
 				226B75F417292DDC00378CED /* HotelObject.h */,
@@ -440,6 +449,7 @@
 				2230E28D172ECC6D0000EFB5 /* loading6.png */,
 				2230E28E172ECC6D0000EFB5 /* loading7.png */,
 				2230E28F172ECC6D0000EFB5 /* loading8.png */,
+				224E9E0D172EEC1E0095EBD2 /* image-border.png */,
 				2230E290172ECC6D0000EFB5 /* loading9.png */,
 				22D52CFC172975F100750181 /* Startup_Facebook_No_Picture.png */,
 				22D52CFA172972D600750181 /* Startup_Facebook_Loading.png */,
@@ -608,6 +618,8 @@
 				22D6A66B172ED6720012193F /* Default.png in Resources */,
 				22D6A66D172ED6770012193F /* Default@2x.png in Resources */,
 				22D6A66F172ED67F0012193F /* Default-568h@2x.png in Resources */,
+				224E9E0E172EEC1E0095EBD2 /* image-border.png in Resources */,
+				224E9E10172EEDB90095EBD2 /* hotelBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -724,6 +736,7 @@
 				GCC_PREFIX_HEADER = "BumpNasty/BumpNasty-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)\"";
 				INFOPLIST_FILE = "BumpNasty/BumpNasty-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/BumpNasty/TestFlightSDK1.2.4\"",
@@ -747,6 +760,7 @@
 				GCC_PREFIX_HEADER = "BumpNasty/BumpNasty-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)\"";
 				INFOPLIST_FILE = "BumpNasty/BumpNasty-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/BumpNasty/TestFlightSDK1.2.4\"",

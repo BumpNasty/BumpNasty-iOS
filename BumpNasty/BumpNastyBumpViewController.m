@@ -53,7 +53,7 @@ static const NSTimeInterval accelerometerMin = 0.01;
     loadingImage.animationRepeatCount = 0;
     
     
-    UIFont *missionScriptFont = [UIFont fontWithName:@"Mission Script" size: 24.0];
+    UIFont *missionScriptFont = [UIFont fontWithName:@"Mission Script" size: 26.0];
         
     [priceInfoLabel setFont: missionScriptFont];
     [distanceInfoLabel setFont: missionScriptFont];
